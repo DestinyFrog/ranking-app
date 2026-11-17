@@ -13,44 +13,54 @@ let {
     showOnlyImage = $bindable(true),
 }: Props = $props()
 
-let element: HTMLLIElement 
-let offset_x = $state(0)
-let offset_y = $state(0)
+let element: HTMLLIElement
+let dragging = false
+let offset_x = 0
+let offset_y = 0
 
-function ondragstart(ev: DragEvent) {
+// Pointer Events cobrem mouse, toque e caneta (o drag HTML5 não funciona em celular)
+function onpointerdown(ev: PointerEvent) {
+    if (ev.pointerType === 'mouse' && ev.button !== 0) return
     const rect = element.getBoundingClientRect()
     offset_x = ev.clientX - rect.left
     offset_y = ev.clientY - rect.top
 
-    const ghost = element.cloneNode(true) as HTMLLIElement
-    ghost.style.position = 'fixed'
-    ghost.style.top = '-1000px'
-    ghost.style.left = '0'
-    ghost.style.width = `${rect.width}px`
-    document.body.appendChild(ghost)
-    ev.dataTransfer?.setDragImage(ghost, offset_x, offset_y)
-    setTimeout(() => ghost.remove(), 0)
-}
-
-function ondragend(ev: DragEvent) {
-    // alguns navegadores reportam (0, 0) quando o drop ocorre fora da janela
-    if (ev.clientX === 0 && ev.clientY === 0) return
     biggestZIndex++
     element.style.zIndex = biggestZIndex.toString()
     element.style.position = 'fixed'
-    element.style.left = `${ev.clientX - offset_x}px`
-    element.style.top = `${ev.clientY - offset_y}px`
+    element.style.left = `${rect.left}px`
+    element.style.top = `${rect.top}px`
+
+    dragging = true
+    ;(ev.currentTarget as HTMLElement).setPointerCapture(ev.pointerId)
+}
+
+function onpointermove(ev: PointerEvent) {
+    if (!dragging) return
+    const maxX = window.innerWidth - element.offsetWidth
+    const maxY = window.innerHeight - element.offsetHeight
+    const x = Math.min(Math.max(0, ev.clientX - offset_x), Math.max(0, maxX))
+    const y = Math.min(Math.max(0, ev.clientY - offset_y), Math.max(0, maxY))
+    element.style.left = `${x}px`
+    element.style.top = `${y}px`
+}
+
+function onpointerup(ev: PointerEvent) {
+    dragging = false
+    const target = ev.currentTarget as HTMLElement
+    if (target.hasPointerCapture(ev.pointerId)) target.releasePointerCapture(ev.pointerId)
 }
 </script>
 
 <li class="topic"
-    draggable="true"
-    ondragstart={ondragstart}
-    ondragend={ondragend}
     bind:this={element}>
 
     {#if showOnlyHeader}
         <header
+            {onpointerdown}
+            {onpointermove}
+            {onpointerup}
+            onpointercancel={onpointerup}
             role="button"
             tabindex="0"
             >
@@ -81,6 +91,7 @@ function ondragend(ev: DragEvent) {
         text-align: center;
         cursor: pointer;
         user-select: none;
+        touch-action: none; // evita o scroll da página ao arrastar com o dedo
         font-size: 13px;
     }
 
