@@ -52,24 +52,24 @@ function onpointerup(ev: PointerEvent) {
 }
 </script>
 
+<!-- svelte-ignore a11y_no_noninteractive_element_to_interactive_role -->
 <li class="topic"
-    bind:this={element}>
+    bind:this={element}
+    {onpointerdown}
+    {onpointermove}
+    {onpointerup}
+    onpointercancel={onpointerup}
+    role="button"
+    tabindex="0">
 
     {#if showOnlyHeader}
-        <header
-            {onpointerdown}
-            {onpointermove}
-            {onpointerup}
-            onpointercancel={onpointerup}
-            role="button"
-            tabindex="0"
-            >
+        <header>
             { topic.name }
         </header>
     {/if}
 
     {#if showOnlyImage}
-        <img src={ topic.img } alt={ topic.name } />
+        <img src={ topic.img } alt={ topic.name } draggable="false" />
     {/if}
 </li>
 
@@ -82,6 +82,8 @@ function onpointerup(ev: PointerEvent) {
     border: var(--border-width) solid var(--color-accent);
     border-radius: var(--radius);
     overflow: hidden;
+    cursor: pointer;
+    touch-action: none; /* evita o scroll da página ao arrastar com o dedo */
 
     header {
         padding: 4px 0;
@@ -89,9 +91,7 @@ function onpointerup(ev: PointerEvent) {
         background-color: var(--color-surface-dark);
         color: var(--color-text);
         text-align: center;
-        cursor: pointer;
         user-select: none;
-        touch-action: none; // evita o scroll da página ao arrastar com o dedo
         font-size: 13px;
     }
 
@@ -100,6 +100,10 @@ function onpointerup(ev: PointerEvent) {
         width: 100%;
         aspect-ratio: 1 / 1;
         object-fit: cover;
+        user-select: none;
+        touch-action: none;
+        -webkit-user-drag: none;
+        pointer-events: none;
     }
 }
 </style>
