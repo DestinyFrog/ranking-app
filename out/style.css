@@ -1,0 +1,90 @@
+:root {
+    --cell-size: 80px;
+    --gap: 10px;
+    --border-width: 2px;
+    --radius: 0px;
+
+    --color-bg: #1e1f35;
+    --color-surface: #343746;
+    --color-surface-dark: #21222c;
+    --color-accent: #92517d;
+    --color-text: whitesmoke;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    overflow: hidden;
+}
+
+#board {
+    flex: 1;
+    height: 100%;
+}
+
+#left-bar {
+    box-sizing: content-box;
+    flex-shrink: 0;
+    width: var(--cell-size);
+    height: 100%;
+    padding: var(--gap);
+    background-color: var(--color-surface);
+    overflow-y: auto;
+}
+
+button {
+    background-color: var(--color-surface-dark);
+    border: 0;
+    border-bottom: var(--border-width) solid var(--color-accent);
+    border-radius: var(--radius) var(--radius) 0 0;
+    color: var(--color-text);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#add-topic-button {
+    width: 100%;
+    margin-bottom: var(--gap);
+}
+
+#list-topic {
+    list-style: none;
+}
+
+.topic {
+    width: var(--cell-size);
+    height: min-content;
+    margin-bottom: var(--gap);
+    border: var(--border-width) solid var(--color-accent);
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.topic header {
+    padding: 4px 0;
+    border-bottom: var(--border-width) solid var(--color-accent);
+    background-color: var(--color-surface-dark);
+    color: var(--color-text);
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    font-size: 13px;
+}
+
+.topic img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
