@@ -1,13 +1,12 @@
-
 interface IRanking {
-    topics: ITopic[]
+  topics: ITopic[];
 }
 
 interface ITopic {
-    name: string
-    img: string
-    pos?: {
-        x: number
-        y: number
-    }
+  name: string;
+  img: string;
+  pos?: {
+    x: number;
+    y: number;
+  };
 }
