@@ -6,11 +6,10 @@
 let rowSeq = 0
 export const newRowId = () => ++rowSeq
 
-export const board = $state<{ topics: ITopic[]; z: number; active: number; showHeader: boolean; showImage: boolean }>({
+export const board = $state<{ topics: ITopic[]; z: number; active: number; display: TopicDisplay }>({
     z: 0,
     active: 1, // módulo visível
-    showHeader: true,
-    showImage: true,
+    display: 'both',
     topics: [
         {
             img: 'https://cdn.myanimelist.net/r/200x268/images/characters/5/203429.jpg?s=5e33d396ad8cbc5542e82c3270a537f1',
@@ -83,4 +82,18 @@ export function releaseRow(moduleId: number, rowId: number) {
     const m = layouts[moduleId]
     if (!m) return
     for (const id in m) if (m[id].place?.row === rowId) m[id] = {}
+}
+
+const placeholder = (name: string) =>
+    'data:image/svg+xml;utf8,' +
+    encodeURIComponent(
+        `<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><rect width="200" height="200" fill="#92517d"/><text x="100" y="100" font-size="100" font-family="sans-serif" fill="whitesmoke" text-anchor="middle" dominant-baseline="central">${
+            (name.trim()[0] ?? '?').toUpperCase().replace(/[<>&]/g, '?')
+        }</text></svg>`,
+    )
+
+/** Adiciona um tópico à barra (sem imagem, usa um placeholder com a inicial). */
+export function addTopic(name: string, img: string) {
+    const id = board.topics.reduce((m, t) => Math.max(m, t.id ?? 0), 0) + 1
+    board.topics.push({ id, name: name.trim(), img: img.trim() || placeholder(name) })
 }

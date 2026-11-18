@@ -98,6 +98,7 @@ function onpointerup(ev: PointerEvent) {
 
 <!-- svelte-ignore a11y_no_noninteractive_element_to_interactive_role -->
 <li class="topic"
+    class:is-sphere={board.display === 'sphere'}
     bind:this={element}
     data-id={topic.id}
     {style}
@@ -108,14 +109,18 @@ function onpointerup(ev: PointerEvent) {
     role="button"
     tabindex="0">
 
-    {#if board.showHeader}
-        <header>
-            { topic.name }
-        </header>
-    {/if}
+    {#if board.display === 'sphere'}
+        <div class="sphere" style:background-image="url({topic.img})" role="img" aria-label={topic.name} title={topic.name}></div>
+    {:else}
+        {#if board.display !== 'image'}
+            <header>
+                { topic.name }
+            </header>
+        {/if}
 
-    {#if board.showImage}
-        <img src={ topic.img } alt={ topic.name } draggable="false" />
+        {#if board.display !== 'name'}
+            <img src={ topic.img } alt={ topic.name } draggable="false" />
+        {/if}
     {/if}
 </li>
 
@@ -139,6 +144,35 @@ function onpointerup(ev: PointerEvent) {
         text-align: center;
         user-select: none;
         font-size: 13px;
+    }
+
+    &.is-sphere {
+        border: 0;
+        border-radius: 50%;
+        overflow: visible;
+    }
+
+    .sphere {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        border: var(--border-width) solid var(--color-accent);
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0 4px 10px rgb(0 0 0 / 0.45);
+        pointer-events: none;
+        overflow: hidden;
+
+        /* brilho e sombra dão volume de esfera */
+        &::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            background: radial-gradient(circle at 32% 28%, rgb(255 255 255 / 0.45), transparent 45%),
+                radial-gradient(circle at 70% 75%, transparent 55%, rgb(0 0 0 / 0.45));
+        }
     }
 
     img {

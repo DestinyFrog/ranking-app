@@ -26,3 +26,6 @@ interface IPlacement {
   /** dentro de uma linha de tier; rank define a ordem na linha */
   place?: { row: number; rank: number };
 }
+
+/** Como os tópicos são exibidos. */
+type TopicDisplay = "both" | "name" | "image" | "sphere";
