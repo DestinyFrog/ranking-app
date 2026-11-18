@@ -1,29 +1,23 @@
 <script lang="ts">
     import Switch from "./Switch.svelte"
-    import Topic from "./Topic.svelte"  
-
-    interface Props {
-        topics: ITopic[]
-    }
-    
-    const { topics }: Props = $props()
-    let biggestZIndex = $state(0)
-    let showOnlyHeader = $state(true)
-    let showOnlyImage = $state(true)
+    import Topic from "./Topic.svelte"
+    import { board, getPlacement } from "./store.svelte"
 </script>
 
 <ul class="ul-topic">
     <li class="option">
-        <Switch bind:checked={showOnlyHeader} label="Apenas Nomes" disabled={showOnlyHeader && !showOnlyImage}></Switch>
+        <Switch bind:checked={board.showHeader} label="Apenas Nomes" disabled={board.showHeader && !board.showImage}></Switch>
         <span>Nomes</span>
     </li>
     <li class="option">
-        <Switch bind:checked={showOnlyImage} label="Apenas Imagens" disabled={!showOnlyHeader && showOnlyImage}></Switch>
+        <Switch bind:checked={board.showImage} label="Apenas Imagens" disabled={!board.showHeader && board.showImage}></Switch>
         <span>Imagens</span>
     </li>
 
-    {#each topics as topic}
-        <Topic {topic} bind:biggestZIndex {showOnlyHeader} {showOnlyImage} />
+    {#each board.topics as topic (topic.id)}
+        {#if !getPlacement(board.active, topic.id)?.place}
+            <Topic {topic} moduleId={board.active} />
+        {/if}
     {/each}
 </ul>
 
