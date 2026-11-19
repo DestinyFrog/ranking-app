@@ -22,6 +22,8 @@ export interface ITemplate {
     name: string
     description: string
     topics: ITopic[]
+    /** criada pelo usuário (pode ser excluída) */
+    custom?: boolean
 }
 
 export const templates: ITemplate[] = [
