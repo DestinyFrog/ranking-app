@@ -57,7 +57,7 @@
     button,
     .file {
         box-sizing: border-box;
-        width: 100%;
+        width: var(--cell-size);
         background-color: var(--color-surface-dark);
         border: 0;
         border-bottom: var(--border-width) solid var(--color-accent);
@@ -97,6 +97,7 @@
         display: flex;
         flex-direction: column;
         gap: 4px;
+        width: var(--cell-size);
         margin-bottom: var(--gap);
     }
 

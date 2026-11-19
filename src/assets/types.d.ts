@@ -7,9 +7,6 @@ interface ITopic {
   img: string;
   id?: number;
 };
-  /** dentro de uma linha de tier; rank define a ordem na linha */
-  place?: { row: number; rank: number };
-}
 
 type ModuleType = "tier" | "quadrant" | "free";
 

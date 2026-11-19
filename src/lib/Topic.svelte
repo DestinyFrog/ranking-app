@@ -55,7 +55,9 @@ function drop(ev: PointerEvent) {
     element.style.pointerEvents = ''
 
     const rowEl = stack.map((e) => e.closest<HTMLElement>('[data-row-id]')).find(Boolean)
-    const overBar = stack.some((e) => e.closest('#left-bar'))
+    // tópicos flutuantes são filhos do #left-bar no DOM; soltar sobre um deles não conta como soltar na barra
+    const isFloating = (e: Element) => e.closest<HTMLElement>('.topic')?.style.position === 'fixed'
+    const overBar = stack.some((e) => e.closest('#left-bar') && !isFloating(e))
 
     if (rowEl && !overBar) {
         const row = Number(rowEl.dataset.rowId)
@@ -173,12 +175,12 @@ function onpointerup(ev: PointerEvent) {
             background: radial-gradient(circle at 32% 28%, rgb(255 255 255 / 0.45), transparent 45%),
                 radial-gradient(circle at 70% 75%, transparent 55%, rgb(0 0 0 / 0.45));
         }
-    }
+    }   
 
     img {
         display: block;
         width: 100%;
-        aspect-ratio: 1 / 1;
+        aspect-ratio: 9 / 6;
         object-fit: cover;
         user-select: none;
         touch-action: none;
