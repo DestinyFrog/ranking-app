@@ -1,23 +1,10 @@
 <script lang="ts">
-    import { onDestroy } from 'svelte'
-    import Topic from './Topic.svelte'
-    import { board, newRowId, getPlacement, releaseRow } from './store.svelte'
+        import Topic from './Topic.svelte'
+    import { board, newRowId, getPlacement, releaseRow, getRows } from './store.svelte'
 
     let { moduleId }: { moduleId: number } = $props()
 
-    interface Row {
-        id: number
-        label: string
-        color: string
-    }
-
-    const rows: Row[] = $state([
-        { id: newRowId(), label: 'S', color: '#ff7f7f' },
-        { id: newRowId(), label: 'A', color: '#ffbf7f' },
-        { id: newRowId(), label: 'B', color: '#ffdf7f' },
-        { id: newRowId(), label: 'C', color: '#ffff7f' },
-        { id: newRowId(), label: 'D', color: '#bfff7f' },
-    ])
+    const rows = $derived(getRows(moduleId))
 
     const rankOf = (id?: number) => getPlacement(moduleId, id)?.place
     const topicsIn = (rowId: number) =>
@@ -27,7 +14,6 @@
 
     // tópicos de uma linha que deixa de existir voltam para a barra
     const release = (rowId: number) => releaseRow(moduleId, rowId)
-    onDestroy(() => rows.forEach((r) => release(r.id)))
 
     function addRow() {
         rows.push({ id: newRowId(), label: 'Novo', color: '#7fbfff' })

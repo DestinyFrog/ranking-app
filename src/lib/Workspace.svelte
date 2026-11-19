@@ -4,58 +4,85 @@
     import TierModule from "./TierModule.svelte"
     import QuadrantModule from "./QuadrantModule.svelte"
     import FreeModule from "./FreeModule.svelte"
-    import { board, clearModule } from "./store.svelte"
+    import { saveKey, saveNow } from "./persist"
+    import { board, addModule, removeModule, snapshot, restore } from "./store.svelte"
 
     interface Props {
+        /** id do template de origem (chave do salvamento local) */
+        templateId: string
         title: string
         onback: () => void
     }
-    const { title, onback }: Props = $props()
+    const { templateId, title, onback }: Props = $props()
 
     const defaultNames: Record<ModuleType, string> = {
         tier: 'Tier',
         quadrant: '4 setores',
         free: 'Área livre',
     }
+    const add = (type: ModuleType) => addModule(type, defaultNames[type])
 
-    let nextId = 4
-    let modules: IModule[] = $state([
-        { id: 1, type: 'tier', name: 'Tier' },
-        { id: 2, type: 'quadrant', name: '4 setores' },
-        { id: 3, type: 'free', name: 'Área livre' },
-    ])
-    let activeId = $state(1)
+    // autosave local: qualquer mudança (inclusive soltar um tópico) regrava, com debounce curto.
+    // O snapshot lê todo o estado, então o effect reage sozinho.
+    let saveTimer: ReturnType<typeof setTimeout>
+    $effect(() => {
+        const data = JSON.stringify(snapshot(templateId, title))
+        clearTimeout(saveTimer)
+        saveTimer = setTimeout(() => {
+            try { localStorage.setItem(saveKey(templateId), data) } catch { /* cota cheia / bloqueado */ }
+        }, 150)
+    })
 
-    // o módulo visível define qual disposição de tópicos a barra mostra
-    $effect.pre(() => { board.active = activeId })
+    // fechar/recarregar/trocar de aba logo após soltar: grava na hora
+    $effect(() => {
+        const flush = () => { clearTimeout(saveTimer); saveNow(templateId, title) }
+        const onVis = () => document.visibilityState === 'hidden' && flush()
+        window.addEventListener('pagehide', flush)
+        document.addEventListener('visibilitychange', onVis)
+        return () => {
+            window.removeEventListener('pagehide', flush)
+            document.removeEventListener('visibilitychange', onVis)
+        }
+    })
 
-    function add(type: ModuleType) {
-        const id = nextId++
-        modules.push({ id, type, name: defaultNames[type] })
-        activeId = id
+    function exportJson() {
+        const blob = new Blob([JSON.stringify(snapshot(templateId, title), null, 2)], { type: 'application/json' })
+        const a = document.createElement('a')
+        a.href = URL.createObjectURL(blob)
+        a.download = `${templateId}.tier.json`
+        a.click()
+        URL.revokeObjectURL(a.href)
     }
 
-    function remove(id: number) {
-        if (modules.length === 1) return
-        const i = modules.findIndex((m) => m.id === id)
-        modules.splice(i, 1)
-        clearModule(id)
-        if (activeId === id) activeId = modules[Math.max(0, i - 1)].id
+    async function importJson(e: Event) {
+        const input = e.currentTarget as HTMLInputElement
+        const file = input.files?.[0]
+        input.value = ''
+        if (!file) return
+        try {
+            restore(JSON.parse(await file.text()))
+        } catch (err) {
+            alert((err as Error).message)
+        }
     }
 </script>
 
-<ModuleRail {modules} {activeId} onselect={(id) => (activeId = id)} onadd={add} />
+<ModuleRail modules={board.modules} activeId={board.active} onselect={(id) => (board.active = id)} onadd={add} />
 <RankingAside />
 
 <main>
     <!-- todos ficam montados (só escondidos) para não perder o estado ao trocar de módulo -->
-    {#each modules as m (m.id)}
-        <section class="module" hidden={m.id !== activeId}>
+    {#each board.modules as m (m.id)}
+        <section class="module" hidden={m.id !== board.active}>
             <header>
                 <button class="back" onclick={onback} title="Voltar para a biblioteca">← Biblioteca</button>
                 <span class="title">{title}</span>
                 <input bind:value={m.name} aria-label="Nome do módulo" maxlength="40" />
-                <button onclick={() => remove(m.id)} disabled={modules.length === 1} title="Excluir módulo">Excluir módulo</button>
+                <button onclick={exportJson} title="Baixar o ranking como JSON">Exportar</button>
+                <label class="btn" title="Carregar um ranking salvo em JSON">
+                    Importar<input type="file" accept="application/json,.json" onchange={importJson} hidden />
+                </label>
+                <button onclick={() => removeModule(m.id)} disabled={board.modules.length === 1} title="Excluir módulo">Excluir módulo</button>
             </header>
             <div class="body">
                 {#if m.type === 'tier'}
@@ -63,7 +90,7 @@
                 {:else if m.type === 'quadrant'}
                     <QuadrantModule />
                 {:else}
-                    <FreeModule active={m.id === activeId} />
+                    <FreeModule active={m.id === board.active} />
                 {/if}
             </div>
         </section>
@@ -103,7 +130,7 @@ header input {
 }
 header .title { color: var(--color-accent); font-size: 12px; white-space: nowrap; }
 header input { flex: 1; }
-header button {
+header button, header .btn {
     padding: 4px 8px;
     border: 0;
     background-color: var(--color-surface-dark);
@@ -111,6 +138,7 @@ header button {
     font-size: 12px;
     cursor: pointer;
 }
+header .btn { cursor: pointer; }
 header button:disabled { opacity: 0.4; cursor: default; }
 
 .body {
