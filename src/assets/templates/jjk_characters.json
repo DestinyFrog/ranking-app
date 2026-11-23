@@ -1,0 +1,383 @@
+{
+  "id": "jjk-characters",
+  "name": "Jujutsu Kaisen — Personagens",
+  "description": "Personagens de Jujutsu Kaisen obtidos via API AniList",
+  "topics": [
+    {
+      "name": "Megumi Fushiguro",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b126635-L0y3I92JSUkN.png"
+    },
+    {
+      "name": "Yuuji Itadori",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b127212-FVm2tD0erQ5B.png"
+    },
+    {
+      "name": "Satoru Gojou",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b127691-9zqh1xpIubn7.png"
+    },
+    {
+      "name": "Nobara Kugisaki",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b133700-f6sOO3TcgLV6.png"
+    },
+    {
+      "name": "Suguru Getou",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b133699-FCnXaISgazAi.png"
+    },
+    {
+      "name": "Sukuna",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b133701-rCQuDpHr3UZL.png"
+    },
+    {
+      "name": "Mahito",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b133702-Y7JRG5vAvjIL.png"
+    },
+    {
+      "name": "Kento Nanami",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b133704-8wLTGjc234q2.png"
+    },
+    {
+      "name": "Maki Zenin",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b134167-5TCytk45YByD.png"
+    },
+    {
+      "name": "Mai Zenin",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b134168-FdWz5w2LqpeF.jpg"
+    },
+    {
+      "name": "Panda",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b137974-9qnK3DPrvLKh.jpg"
+    },
+    {
+      "name": "Aoi Toudou",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b137975-6TH7PiLWJaqy.png"
+    },
+    {
+      "name": "Kasumi Miwa",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b156848-Rf0tuoQCNyZV.png"
+    },
+    {
+      "name": "Jougo",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b156991-niYjdp9CxO4w.png"
+    },
+    {
+      "name": "Toge Inumaki",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b157115-kdhRYQdVhH95.png"
+    },
+    {
+      "name": "Chousou",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b157116-2jYQf3y8NeTZ.png"
+    },
+    {
+      "name": "Junpei Yoshino",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b157214-ROBNoXVEXRNy.jpg"
+    },
+    {
+      "name": "Mei Mei",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b157215-I3TQJu8nkDwD.jpg"
+    },
+    {
+      "name": "Utahime Iori",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b157864-rejVYNx0kQZr.jpg"
+    },
+    {
+      "name": "Takuma Ino",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b157865-X9ENX9OzWevS.jpg"
+    },
+    {
+      "name": "Noritoshi  Kamo",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b157866-UWDtYBoG71PD.png"
+    },
+    {
+      "name": "Yoshinobu Gakuganji",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b157867-dHdd8ZECuzHx.png"
+    },
+    {
+      "name": "Momo Nishimiya",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b157868-Ui2Wht3M6tlM.png"
+    },
+    {
+      "name": "Shouko Ieiri",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b158154-UCqbiULli62P.png"
+    },
+    {
+      "name": "Hanami",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b172743-4Y5SXqED6A3G.jpg"
+    },
+    {
+      "name": "Masamichi Yaga",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b189237-ZxNJwVPL8DvW.png"
+    },
+    {
+      "name": "Kiyotaka Ijichi",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b189238-ItSLams6lRk9.png"
+    },
+    {
+      "name": "Nagi Yoshino",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b194056-yEzHVaAF9eqJ.png"
+    },
+    {
+      "name": "Wasuke Itadori",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b194074-SnbrUkHIyM62.png"
+    },
+    {
+      "name": "Yuki Tsukumo",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b196502-aBvtPFr9lGm2.png"
+    },
+    {
+      "name": "Nobuko Takada",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b197119-Z2EBJXGTATzN.png"
+    },
+    {
+      "name": "Setsuko Sasaki",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b200765-xQLkNIRUGuQw.jpg"
+    },
+    {
+      "name": "Seito Kaichou",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b200766-nVpeCPCSCWZt.jpg"
+    },
+    {
+      "name": "Takeshi Iguchi",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b200767-bTqPLS2Jpiqf.png"
+    },
+    {
+      "name": "Takagi",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b200768-fgIRyfO8ABk2.jpg"
+    },
+    {
+      "name": "Sotomura",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b206208-ubr8Xv0u2FxD.png"
+    },
+    {
+      "name": "Juuzou Kumiya",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b207988-GB9ZpnPA6dWQ.jpg"
+    },
+    {
+      "name": "Haruta Shigemo",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b209694-xSS6FxN4al3l.png"
+    },
+    {
+      "name": "Shouta Itou",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b210062-EIMZ4Nmvx6rP.png"
+    },
+    {
+      "name": "Koukichi Muta",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b210154-nIn9DX39GFKP.jpg"
+    },
+    {
+      "name": "Esou",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b210831-wsucHRbSZjbV.png"
+    },
+    {
+      "name": "Kechizu",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b210832-d1Fg0CePSU86.png"
+    },
+    {
+      "name": "Akari Nitta",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b210846-XcRQ643Ne8Pb.png"
+    },
+    {
+      "name": "Takeda",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b222599-0eRcr9ezGaN0.png"
+    },
+    {
+      "name": "Yuuta Okkotsu",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b129571-GHJk7gviHOOw.jpg"
+    },
+    {
+      "name": "Naobito Zenin",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b188432-WePQBJsEuSts.png"
+    },
+    {
+      "name": "Tsumiki Fushiguro",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b193479-aGNRmbU5jNwR.png"
+    },
+    {
+      "name": "Kinji Hakari",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b197584-fK7Jc6DLfx7e.jpg"
+    },
+    {
+      "name": "Dagon",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b204383-5oTlVPpaCnM2.jpg"
+    },
+    {
+      "name": "Hijoushikina Isha",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b210063-njPW9eSCTeiJ.png"
+    },
+    {
+      "name": "Sam",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b210064-6vFnZA9DoZYl.png"
+    },
+    {
+      "name": "Uraume",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b210830-rJ8LVEvLUqjE.jpg"
+    },
+    {
+      "name": "Kenjaku",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b289584-KndGudJZm5Ik.jpg"
+    },
+    {
+      "name": "Yubi no Kishu",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b306189-NB0cd8fgzPYg.png"
+    },
+    {
+      "name": "Taichi Kanada",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b306276-7TczFlh38ICp.png"
+    },
+    {
+      "name": "Tadashi Okazaki no Haha",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b306281-2TYVdsokBkIN.png"
+    },
+    {
+      "name": "Tadashi Okazaki",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b306282-5a4wVsGJF5Tz.png"
+    },
+    {
+      "name": "Orizuki",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b322042-NM7flYaGDuRg.png"
+    },
+    {
+      "name": "Garuda",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b322043-50p14GPnxFqB.png"
+    },
+    {
+      "name": "Kankoshi A",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b327848-ppDKmMJ2MYRe.png"
+    },
+    {
+      "name": "Tsumiki no Tomodachi",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b327851-lOwe68hdmlbP.png"
+    },
+    {
+      "name": "Ticket Urite",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b327852-qQzvfJYuoxpq.png"
+    },
+    {
+      "name": "Manager",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b327853-YQYinIPa4OsU.png"
+    },
+    {
+      "name": "Kankoshi B",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b327854-3seoCbIlcvLX.png"
+    },
+    {
+      "name": "Kodomo",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b327855-7lusC0WyZ0N5.png"
+    },
+    {
+      "name": "Sawamura",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b327856-vErAN3XccXlM.png"
+    },
+    {
+      "name": "Fujinuma Imouto",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b327857-mAfjwycUUmS9.png"
+    },
+    {
+      "name": "Fujinuma no Yuujin",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b327858-hjQDB3xT8pmh.png"
+    },
+    {
+      "name": "Aida",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b327859-AhV2YpvX52rg.png"
+    },
+    {
+      "name": "Fujinuma Otouto",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b327860-deFpNmaAR40T.png"
+    },
+    {
+      "name": "Itamae",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b327861-GzHrgCElevTE.png"
+    },
+    {
+      "name": "Kumo no Noroi",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b327862-zx57slP3WdTn.png"
+    },
+    {
+      "name": "Honda",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b327863-gRFn7m3niNp1.png"
+    },
+    {
+      "name": "Tantei B",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b327864-V54SmtccIlV8.png"
+    },
+    {
+      "name": "TV Shikaisha",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b327865-kSikWO13bTeJ.png"
+    },
+    {
+      "name": "Unten-sha",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b327866-FniwcTRNpX1C.png"
+    },
+    {
+      "name": "Shachou",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b327867-eVpSSc1rKe9O.png"
+    },
+    {
+      "name": "Gakkou-chou",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b327868-ULa9XWL6spPz.png"
+    },
+    {
+      "name": "Pan-ya",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b327869-YkgTuc7RI1Ok.png"
+    },
+    {
+      "name": "Noritoshi no Haha",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b327870-b6RSUCYvE57t.png"
+    },
+    {
+      "name": "Kyoushi",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b327871-Abtfs6joa4nb.png"
+    },
+    {
+      "name": "Gal",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b327872-n0QcQ6dxEkxC.png"
+    },
+    {
+      "name": "Tantei A",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b327873-GvYUUiuV5CG1.png"
+    },
+    {
+      "name": "Junpei no Doukyuusei B",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b327874-J1P57mvPUFIb.png"
+    },
+    {
+      "name": "Manager B",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b327875-vGfJkymxvVzi.png"
+    },
+    {
+      "name": "Takashi",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b327876-qPUmd6Ab2sLE.png"
+    },
+    {
+      "name": "Tsubasa",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b327877-7hCKc4yhaX21.png"
+    },
+    {
+      "name": "Sayama",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b327878-7QfTl2L4WcxW.png"
+    },
+    {
+      "name": "Nishimura",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b327879-8ZoQ8szzH2Ts.png"
+    },
+    {
+      "name": "Frodo",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b327880-kvT1dZ7kSNZa.png"
+    },
+    {
+      "name": "Waiter",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b327883-clvhD5GBSzjz.png"
+    },
+    {
+      "name": "Junpei no Doukyuusei A",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b327885-mhnerhHO6Ggs.png"
+    },
+    {
+      "name": "Kankoshi C",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b327886-SK2OEp32W8yl.png"
+    },
+    {
+      "name": "Waitress",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b327888-ftlpXnAh678F.png"
+    }
+  ]
+}

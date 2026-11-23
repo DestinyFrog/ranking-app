@@ -1,0 +1,95 @@
+{
+  "id": "chainsaw-man-characters",
+  "name": "Chainsaw Man — Personagens",
+  "description": "Personagens de Chainsaw Man obtidos via API AniList",
+  "topics": [
+    {
+      "name": "Denji",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b130102-FO1VHNnEnLlB.png"
+    },
+    {
+      "name": "Reze",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b148740-ceAibPxLW8rR.png"
+    },
+    {
+      "name": "Makima",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b137080-UHcynYNjb5ZU.png"
+    },
+    {
+      "name": "Beam",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b157232-5GuWeqoFN9Kq.jpg"
+    },
+    {
+      "name": "Aki Hayakawa",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b137081-TSrUR3mUJL6r.png"
+    },
+    {
+      "name": "Tenshi no Akuma",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b152231-xNV2YsTRzEcS.png"
+    },
+    {
+      "name": "Bouryoku no Majin",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b157231-hV81SwGqxl2R.jpg"
+    },
+    {
+      "name": "Power",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b137079-6yLEUYR3bmpr.png"
+    },
+    {
+      "name": "Kobeni Higashiyama",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b144594-0dbO1NSYeZ12.png"
+    },
+    {
+      "name": "Kishibe",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b144593-hdCTT9t54z0s.png"
+    },
+    {
+      "name": "Pochita",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b170266-bBXPkNJnd3mg.png"
+    },
+    {
+      "name": "Nyaako",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b174271-iC0Ul9YfLOk6.png"
+    },
+    {
+      "name": "Taifuu no Akuma",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b174276-stAdWlAYg0y1.png"
+    },
+    {
+      "name": "Kitsune no Akuma",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b290671-YaauAZvHLnyo.png"
+    },
+    {
+      "name": "Nomo",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b174266-ap8QWVGmsZ3K.png"
+    },
+    {
+      "name": "Katou",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b174277-M7koGJI5jVwh.png"
+    },
+    {
+      "name": "Tanabe",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b174280-tfDQTac63uq4.png"
+    },
+    {
+      "name": "Masaki Andou",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b174285-1xeZ6Vd7sP0y.png"
+    },
+    {
+      "name": "Nazo no Otoko",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b378316-kR8JoyqCEPMA.png"
+    },
+    {
+      "name": "Fuku Taichou",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b403939-M5w9YTMa1pUM.jpg"
+    },
+    {
+      "name": "Futamichi no Master",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg"
+    },
+    {
+      "name": "Buta no Akuma",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b174284-JvwoPbQEmKkw.png"
+    }
+  ]
+}

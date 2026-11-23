@@ -1,0 +1,159 @@
+{
+  "id": "gurren-lagann-characters",
+  "name": "Gurren Lagann — Personagens",
+  "description": "Personagens de Gurren Lagann obtidos via API AniList",
+  "topics": [
+    {
+      "name": "Simon",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b2257-jnalsdnIX1vN.jpg"
+    },
+    {
+      "name": "Youko Littner",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b2063-7BKqQbrhtDD2.png"
+    },
+    {
+      "name": "Kamina",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b2075-sWb5Xz76JWdX.png"
+    },
+    {
+      "name": "Nia Teppelin",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b2761-FmSJGaW9WzYZ.png"
+    },
+    {
+      "name": "Leeron Littner",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/2376.jpg"
+    },
+    {
+      "name": "Rossiu Adai",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/2377-b95gEhI6Udqq.png"
+    },
+    {
+      "name": "Viral",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/n2378-UcNU2Pm8MlB9.png"
+    },
+    {
+      "name": "Adiane",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/3404.jpg"
+    },
+    {
+      "name": "Cytomander",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/3430.jpg"
+    },
+    {
+      "name": "Guame",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/3431.jpg"
+    },
+    {
+      "name": "Gimmy Adai",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/3432.jpg"
+    },
+    {
+      "name": "Darry Adai",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/3433.jpg"
+    },
+    {
+      "name": "Kittan Bachika",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b3434-ahdOsb4rwsCV.jpg"
+    },
+    {
+      "name": "Kiyoh Bachika",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/3435.jpg"
+    },
+    {
+      "name": "Kinon Bachika",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/3436.jpg"
+    },
+    {
+      "name": "Kiyal Bachika",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/3437.jpg"
+    },
+    {
+      "name": "Boota",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/4700.jpg"
+    },
+    {
+      "name": "Anti-Spiral",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b5115-Aph7LPvS4LvR.png"
+    },
+    {
+      "name": "Lordgenome",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/5118.jpg"
+    },
+    {
+      "name": "Koko-jii",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/8037.jpg"
+    },
+    {
+      "name": "Artenborough Cortich",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/10358.jpg"
+    },
+    {
+      "name": "Leyte Jokin",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/11170.jpg"
+    },
+    {
+      "name": "Thymilph",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/13598.jpg"
+    },
+    {
+      "name": "Magin",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/16432.jpg"
+    },
+    {
+      "name": "Zoushi Kanai",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/18639.jpg"
+    },
+    {
+      "name": "Gabal Docker",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/18640.jpg"
+    },
+    {
+      "name": "Kid Coega",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/18641.jpg"
+    },
+    {
+      "name": "Iraak Coega",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/18642.jpg"
+    },
+    {
+      "name": "Tetsukan Littner",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/18643.jpg"
+    },
+    {
+      "name": "Dayakka Littner",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b18644-BCb3J5spW3hq.jpg"
+    },
+    {
+      "name": "Jorgun Bakusa",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/18645.jpg"
+    },
+    {
+      "name": "Balinbow Bakusa",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/18646.jpg"
+    },
+    {
+      "name": "Makken Jokin",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/18647.jpg"
+    },
+    {
+      "name": "Cybela Kuto",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/18678.jpg"
+    },
+    {
+      "name": "Guinble Kaito",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/18679.jpg"
+    },
+    {
+      "name": "Anne Littner",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/26914.jpg"
+    },
+    {
+      "name": "Memu",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/31075.jpg"
+    },
+    {
+      "name": "Narrator",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b36309-6KM0riV4lqfN.jpg"
+    }
+  ]
+}

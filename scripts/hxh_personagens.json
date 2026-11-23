@@ -1,0 +1,651 @@
+{
+  "id": "hxh-characters",
+  "name": "Hunter x Hunter — Personagens",
+  "description": "Personagens de Hunter x Hunter obtidos via API AniList",
+  "topics": [
+    {
+      "name": "Gon Freecss",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b30-lyFExKyDhefc.jpg"
+    },
+    {
+      "name": "Killua Zoldyck",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b27-Z5O02kQUydpT.jpg"
+    },
+    {
+      "name": "Kurapika",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b28-ivA7UGnfE40a.png"
+    },
+    {
+      "name": "Leorio Paradinight",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b29-RgzoSeKmDYzl.jpg"
+    },
+    {
+      "name": "Hisoka Morow",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b31-FZckOuu7L1un.png"
+    },
+    {
+      "name": "Ging Freecss",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/26-VpZXIwOdcz8p.jpg"
+    },
+    {
+      "name": "Illumi Zoldyck",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b57-pTFguojSOQZW.png"
+    },
+    {
+      "name": "Chrollo Lucilfer",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b58-USOmsz3nursi.jpg"
+    },
+    {
+      "name": "Zeno Zoldyck",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/n59-6mnrlhnGe2mw.png"
+    },
+    {
+      "name": "Silva Zoldyck",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/60.jpg"
+    },
+    {
+      "name": "Feitan Portor",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/3195.jpg"
+    },
+    {
+      "name": "Bonolenov Ndongo",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/5827.jpg"
+    },
+    {
+      "name": "Franklin Bordeaux",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/n5828-cMOh5ifgAEW1.png"
+    },
+    {
+      "name": "Kortopi",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/n5829-ubGjeYxlPnxL.png"
+    },
+    {
+      "name": "Machi Komacine",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b5830-IEl8BCasHZvG.png"
+    },
+    {
+      "name": "Nobunaga Hazama",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/n5831-COYqtVagw99J.png"
+    },
+    {
+      "name": "Shalnark Ryuseih",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/5832.jpg"
+    },
+    {
+      "name": "Shizuku Murasaki",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/5833.jpg"
+    },
+    {
+      "name": "Phinks Magcub",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/n5834-s3A4bR8IX01p.png"
+    },
+    {
+      "name": "Pakunoda",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b5835-cbomgYG3LWrP.jpg"
+    },
+    {
+      "name": "Uvogin",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/5836.jpg"
+    },
+    {
+      "name": "Baka Ki El Dogra",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b6013-KlW2B29yaxwP.png"
+    },
+    {
+      "name": "Menchi",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b6088-Bih7EhJL1QE6.jpg"
+    },
+    {
+      "name": "Kalluto Zoldyck",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/n6089-ro8HdSKvlycB.jpg"
+    },
+    {
+      "name": "Leroute",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/n10535-iCSNBBSq22iD.png"
+    },
+    {
+      "name": "Neferpitou",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b12300-kYzopQUTLa9A.png"
+    },
+    {
+      "name": "Senritsu",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b12515-Jgj0kBXgBmhf.jpg"
+    },
+    {
+      "name": "Biscuit Krueger",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b13898-nHq3fRmp9uPD.png"
+    },
+    {
+      "name": "Komugi",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/14313-J4CtnaAZidUe.jpg"
+    },
+    {
+      "name": "Isaac Netero",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b14489-WgGsdlQJka65.jpg"
+    },
+    {
+      "name": "Neon Nostrade",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b17564-tJHe64LxFqm1.jpg"
+    },
+    {
+      "name": "Riehlvelt",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b17720-7WEaYkPoQSB8.jpg"
+    },
+    {
+      "name": "Light Nostrade",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b18108-NVyC0NCmyBnA.jpg"
+    },
+    {
+      "name": "Kite",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b20594-QQJBR3LYobbv.jpg"
+    },
+    {
+      "name": "Hanzou",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b20677-I7bchq2Ema7S.jpg"
+    },
+    {
+      "name": "Mito Freecss",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b20678-srslmpp3o4yK.jpg"
+    },
+    {
+      "name": "Razor",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b22518-uoFnMXlU3kAo.jpg"
+    },
+    {
+      "name": "Satotz",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b22519-8eXaBryPSRL5.jpg"
+    },
+    {
+      "name": "Wing",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b22521-lW31xQRGKQm8.jpg"
+    },
+    {
+      "name": "Tonpa",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b22522-a0LOc6iIj2LU.jpg"
+    },
+    {
+      "name": "Meruem",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b23277-EYmIxzL64Mji.png"
+    },
+    {
+      "name": "Ponzu",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b24279-wCttqcLJ3W2b.jpg"
+    },
+    {
+      "name": "Ikalgo",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/29805-YicEgIbxmSkv.jpg"
+    },
+    {
+      "name": "Morel Mackernasey",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b29806-49vvaQbvx7Ag.jpg"
+    },
+    {
+      "name": "Shoot McMahon",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/29807.jpg"
+    },
+    {
+      "name": "Meleoron",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/29808.jpg"
+    },
+    {
+      "name": "Knuckle Bine",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b29809-wAoam5TkZilJ.png"
+    },
+    {
+      "name": "Barry",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/33283.jpg"
+    },
+    {
+      "name": "Tsezguerra",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b33285-n1K7KaTFVj5D.png"
+    },
+    {
+      "name": "Goreinu",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/33299.jpg"
+    },
+    {
+      "name": "Genthru",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/33300.jpg"
+    },
+    {
+      "name": "Abengane",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b33301-L5YufdK5sH8T.jpg"
+    },
+    {
+      "name": "Bara",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b33303-n4wE5Iveb8JB.jpg"
+    },
+    {
+      "name": "Sub",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/33304.jpg"
+    },
+    {
+      "name": "Dwun",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b33308-EyigSABUMwgq.jpg"
+    },
+    {
+      "name": "Binolt",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/33347.jpg"
+    },
+    {
+      "name": "Battera",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b33348-3WwMa97vvWnh.jpg"
+    },
+    {
+      "name": "Puhat",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b33350-EMRaTHkCTJqe.jpg"
+    },
+    {
+      "name": "Elena",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b33351-zLsDLpkrgGwd.jpg"
+    },
+    {
+      "name": "Eeta",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b33352-SoU0ScSSvUNP.jpg"
+    },
+    {
+      "name": "List",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b33353-hKq5OAI4v4h9.jpg"
+    },
+    {
+      "name": "No. 0",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b33354-qZtrIlwiE0IP.jpg"
+    },
+    {
+      "name": "Kess",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/33355.jpg"
+    },
+    {
+      "name": "Asta",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b33356-vhQA7wANJ8UP.jpg"
+    },
+    {
+      "name": "Kazsule",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b33357-F3pQUOayGdDH.jpg"
+    },
+    {
+      "name": "Milluki Zoldyck",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b33375-uyAQDvo1lZc2.jpg"
+    },
+    {
+      "name": "Pokkle",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b33376-5IQ7MSCuXOb1.png"
+    },
+    {
+      "name": "Baise",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b33378-CCUuuCbPk9qy.png"
+    },
+    {
+      "name": "Squala",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b33379-w79Z4LElSXNo.jpg"
+    },
+    {
+      "name": "Basho",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/n33380-8sbAnMeufQkH.png"
+    },
+    {
+      "name": "Sachmono Tocino",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b33381-yzXRIULW2ChX.jpg"
+    },
+    {
+      "name": "Dalzollene",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b33382-5Jvz56mXsxl4.jpg"
+    },
+    {
+      "name": "Palm Siberia",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b34054-QJaRVZMUmZNs.png"
+    },
+    {
+      "name": "Canary",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b35894-pIxaSDFr0oGe.png"
+    },
+    {
+      "name": "Narrator",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b36309-6KM0riV4lqfN.jpg"
+    },
+    {
+      "name": "Cheetu",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/36817.jpg"
+    },
+    {
+      "name": "Shaiapouf",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/n41135-tTO36i1YAA5L.jpg"
+    },
+    {
+      "name": "Zushi",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b43931-7ork3ZzLbGe6.jpg"
+    },
+    {
+      "name": "Menthuthuyoupi",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/43953.jpg"
+    },
+    {
+      "name": "Katzo",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b49569-4SdIezCcFECx.png"
+    },
+    {
+      "name": "Senchou",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b49757-z0flD3pwd5Bq.jpg"
+    },
+    {
+      "name": "Hi-sobo",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b49759-SFguG9pkcpCy.png"
+    },
+    {
+      "name": "Nicolas",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b50243-HdWPAllkQPp4.jpg"
+    },
+    {
+      "name": "Gereta",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b50695-VUoHaVoyPqCF.jpg"
+    },
+    {
+      "name": "Buhara",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b50847-XGj2qeYWkvIK.jpg"
+    },
+    {
+      "name": "Cherry",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b50933-gtFjo8w1DLaS.jpg"
+    },
+    {
+      "name": "Lippo",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b52399-NPrfid9JYTDv.jpg"
+    },
+    {
+      "name": "Alluka Zoldyck",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b52425-0doIaKgpDbds.jpg"
+    },
+    {
+      "name": "Majitani",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b52497-TYAsMF2XBFeG.jpg"
+    },
+    {
+      "name": "Beans",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/53271.jpg"
+    },
+    {
+      "name": "Johness",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b53275-yZ5qpYYl7ZUL.jpg"
+    },
+    {
+      "name": "Sedokan",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b53277-rLJlRKZuXF7y.jpg"
+    },
+    {
+      "name": "Bendot",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b53279-CosyMp3DE5b7.jpg"
+    },
+    {
+      "name": "Togari",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b53559-3mFYhuXvFBRg.jpg"
+    },
+    {
+      "name": "Todo",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b53561-dgKEiKjMYV97.jpg"
+    },
+    {
+      "name": "Gozu",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b54129-v9v9aSqpHzyd.jpg"
+    },
+    {
+      "name": "Cheadle Yorkshire",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/55069-QeIrBVdEt0aW.jpg"
+    },
+    {
+      "name": "Pariston Hill",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b55071-rUsNSPYGF7Y5.png"
+    },
+    {
+      "name": "Botobai Gigante",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/55073-iQLMVlvrtbqe.jpg"
+    },
+    {
+      "name": "Kanzai",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/55075-KKQXFAG8pzkL.jpg"
+    },
+    {
+      "name": "Piyon",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/55077-RWlOUdlR4Ty6.png"
+    },
+    {
+      "name": "Ginta",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/55079-LECH78lwUF3e.jpg"
+    },
+    {
+      "name": "Saccho Kobayakawa",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/55081-A3L2jnO8AfY2.jpg"
+    },
+    {
+      "name": "Saiyuu",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/55083-3vJ6JvYlLqxh.jpg"
+    },
+    {
+      "name": "Gel",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/55085-HBY3N1pb5uA9.jpg"
+    },
+    {
+      "name": "Cluck",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b55087-R5zgcj5bwc6g.png"
+    },
+    {
+      "name": "Mizaistom Nana",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/55725-b4ogWPLuBA77.jpg"
+    },
+    {
+      "name": "Sommy",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b55949-8zgkFZLVPo0p.jpg"
+    },
+    {
+      "name": "Bodoro",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b57757-XH4bpyMbNXBb.jpg"
+    },
+    {
+      "name": "Zebro",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b58907-3SLuvUqD7jxY.jpg"
+    },
+    {
+      "name": "Kikyo Zoldyck",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b59457-r6WAzVNE0zUH.jpg"
+    },
+    {
+      "name": "Gotou",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b60009-e0TWRv9Mwvtd.jpg"
+    },
+    {
+      "name": "Seaquant",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b61953-Tk4aihyRdupi.jpg"
+    },
+    {
+      "name": "Kiriko",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/61955.jpg"
+    },
+    {
+      "name": "Kastro",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b63099-9W2TXlY0ewX3.jpg"
+    },
+    {
+      "name": "Umori",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/63539.jpg"
+    },
+    {
+      "name": "Amori",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/63541.jpg"
+    },
+    {
+      "name": "Imori",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/63543.jpg"
+    },
+    {
+      "name": "Sadaso",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b64137-XqGzWE3N38Wx.jpg"
+    },
+    {
+      "name": "Gido",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b64513-QfeHMcTTlXaa.jpg"
+    },
+    {
+      "name": "Cocco",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b66135-osaTSFrkgK2A.png"
+    },
+    {
+      "name": "Izunavi",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b66481-bmXF4XHJiVpR.png"
+    },
+    {
+      "name": "Eliza",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b67203-Cne1pPDwxmxd.jpg"
+    },
+    {
+      "name": "Zepile",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b70621-6mYEttynRmNr.jpg"
+    },
+    {
+      "name": "Latarza",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b76962-5U5FVe6lxRGu.jpg"
+    },
+    {
+      "name": "Nickes",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b80779-RhTBKTB5Gxj8.jpg"
+    },
+    {
+      "name": "Banana Kavaro",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b82859-V6fhoKn0Ky6o.png"
+    },
+    {
+      "name": "Spinner Clow",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b82861-Xi0xWvWGKTwY.png"
+    },
+    {
+      "name": "Lin Koshi",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/82865.jpg"
+    },
+    {
+      "name": "Stick Dinner",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/82867.jpg"
+    },
+    {
+      "name": "Monta Yuras",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/82869.jpg"
+    },
+    {
+      "name": "Knov",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/82925.jpg"
+    },
+    {
+      "name": "Chimera Ant no Joou",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/83183.jpg"
+    },
+    {
+      "name": "Colt",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/83199.jpg"
+    },
+    {
+      "name": "Zazan",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/83201.jpg"
+    },
+    {
+      "name": "Welfin",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b83203-pwDQcWRCCS9g.png"
+    },
+    {
+      "name": "Kurt",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/83205.jpg"
+    },
+    {
+      "name": "Reina",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/83207.jpg"
+    },
+    {
+      "name": "Rammot",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/83211.jpg"
+    },
+    {
+      "name": "Leol",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/83213.jpg"
+    },
+    {
+      "name": "Balda",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/83373.jpg"
+    },
+    {
+      "name": "Bloster",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/83375.jpg"
+    },
+    {
+      "name": "Peggy",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/83377.jpg"
+    },
+    {
+      "name": "Koala",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/84077.jpg"
+    },
+    {
+      "name": "Hina",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/85139.jpg"
+    },
+    {
+      "name": "Yunju",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/86009.jpg"
+    },
+    {
+      "name": "Jispa",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/n130567-zmuupLw8xIog.jpg"
+    },
+    {
+      "name": "Gyro",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b163022-twD7SzGXCoYO.png"
+    },
+    {
+      "name": "Amana",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b166050-uyS306AXWGPV.jpg"
+    },
+    {
+      "name": "Amane",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b172921-rgObppgA4trX.png"
+    },
+    {
+      "name": "Nanika",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b209939-sxORvCfWDPHi.png"
+    },
+    {
+      "name": "Shidore",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b224021-Csy2wkLSWR8o.jpg"
+    },
+    {
+      "name": "86-ban",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b237341-Ep6HiiTOoosO.png"
+    },
+    {
+      "name": "Pike",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b250560-f8MsgkP4ORF4.png"
+    },
+    {
+      "name": "Bopobo",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/33284.jpg"
+    },
+    {
+      "name": "Ivlenkov",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/67207.jpg"
+    },
+    {
+      "name": "Podungo Lapoy",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/82863.jpg"
+    },
+    {
+      "name": "Onnanoko",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg"
+    },
+    {
+      "name": "Pairo",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/73493.jpg"
+    },
+    {
+      "name": "Pochi",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b252134-Djc1OZGqjnwn.png"
+    },
+    {
+      "name": "Koro",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b252135-NqlF9yzE9XS4.png"
+    }
+  ]
+}

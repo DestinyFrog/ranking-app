@@ -1,0 +1,191 @@
+{
+  "id": "jigokuraku-characters",
+  "name": "Hell's Paradise — Personagens",
+  "description": "Personagens de Hell's Paradise obtidos via API AniList",
+  "topics": [
+    {
+      "name": "Gabimaru",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b137260-xmSis8FmwhEE.png"
+    },
+    {
+      "name": "Sagiri",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b137263-I2krXFEFOHjL.png"
+    },
+    {
+      "name": "Choubei Aza",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b137269-8sLwiijk0bti.jpg"
+    },
+    {
+      "name": "Touma",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b137261-lWhxTwLOYLpO.png"
+    },
+    {
+      "name": "Yuzuriha",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b137270-PTFen9fxyo4H.png"
+    },
+    {
+      "name": "Shion",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b137267-D3mKSNS6H4o8.png"
+    },
+    {
+      "name": "Nurugai",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b137262-frEjtAk5zYRV.png"
+    },
+    {
+      "name": "Gantetsusai Tamiya",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b137264-qmjsYXb6YkX7.png"
+    },
+    {
+      "name": "Fuchi",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b137268-veVGOk95qa87.jpg"
+    },
+    {
+      "name": "Eizen",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b151774-BYqBHZU6mWAQ.jpg"
+    },
+    {
+      "name": "Shugen",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b148752-WkhrTfWC7kC8.png"
+    },
+    {
+      "name": "Jikka",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b148756-BRSo9v4Rzds2.png"
+    },
+    {
+      "name": "Mei",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b148755-KybQKJ8BPh1Q.jpg"
+    },
+    {
+      "name": "Tenza",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b137265-seGQMLb69BKV.png"
+    },
+    {
+      "name": "Senta",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b137266-5BQ0RQI2SXjs.png"
+    },
+    {
+      "name": "Isuzu",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b151770-kRchCoGLzflU.png"
+    },
+    {
+      "name": "Kiyomaru",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b151776-cSAXW38xkM5B.png"
+    },
+    {
+      "name": "Rien",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b148754-YBgD5DYoerY3.jpg"
+    },
+    {
+      "name": "Yui",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b151771-obZQxZPwjiud.png"
+    },
+    {
+      "name": "Ju Fa",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b151772-SvkrizvwLicX.png"
+    },
+    {
+      "name": "Ran",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b151773-THqI74IGmHsS.png"
+    },
+    {
+      "name": "Zhu Jin",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b151775-1f264MokbLYd.jpg"
+    },
+    {
+      "name": "Tao Fa",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b151778-eaLrGLvveKGL.png"
+    },
+    {
+      "name": "Gui Fa",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b170488-3YyeY3FGm7Sn.jpg"
+    },
+    {
+      "name": "Shija",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b170487-I4NQfboRrqtV.jpg"
+    },
+    {
+      "name": "Osa",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b301607-ERwRfX9Ddda3.png"
+    },
+    {
+      "name": "Houko",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b305440-nNgZoPz0B2NE.jpg"
+    },
+    {
+      "name": "Kumokiri",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b306843-B2eAJ9TCsPaP.png"
+    },
+    {
+      "name": "Shokushu Doushi",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b307701-vmr1ov2ZJNaq.jpg"
+    },
+    {
+      "name": "Dokuro Doushi",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg"
+    },
+    {
+      "name": "Tokugawa Nariyoshi",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b301606-08sCkI5L3d11.png"
+    },
+    {
+      "name": "Aoki",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b302050-IX99PePUve0D.jpg"
+    },
+    {
+      "name": "Saya",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b306735-z9jqyKEcD2w2.png"
+    },
+    {
+      "name": "Shion no Hahaoya",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg"
+    },
+    {
+      "name": "Yakunin",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg"
+    },
+    {
+      "name": "Ninsoku",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg"
+    },
+    {
+      "name": "Kinkakubou",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b306855-fG61hBdkOF2S.png"
+    },
+    {
+      "name": "Oyabun",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg"
+    },
+    {
+      "name": "Hakusai Doushi",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg"
+    },
+    {
+      "name": "Tsukushi Doushi",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg"
+    },
+    {
+      "name": "Roushi",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b392486-9cmikT0J7s1E.png"
+    },
+    {
+      "name": "Monkasei",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg"
+    },
+    {
+      "name": "Choumin A",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg"
+    },
+    {
+      "name": "Choumin B",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg"
+    },
+    {
+      "name": "Yamada-ya Montei",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg"
+    },
+    {
+      "name": "Ishi Kakure Nin",
+      "img": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg"
+    }
+  ]
+}

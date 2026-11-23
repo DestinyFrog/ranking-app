@@ -1,0 +1,1995 @@
+{
+  "id": "avatar-characters",
+  "name": "Avatar: A Lenda de Aang — Personagens",
+  "description": "Personagens de Avatar: A Lenda de Aang e A Lenda de Korra obtidos via Last Airbender API",
+  "topics": [
+    {
+      "name": "Bolin",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/d/d4/Bolin.png/revision/latest?cb=20150406232314"
+    },
+    {
+      "name": "Afiko",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/2/24/Afiko.png/revision/latest?cb=20121121024128"
+    },
+    {
+      "name": "Butakha",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/6/6a/Butakha.png/revision/latest?cb=20121107115041"
+    },
+    {
+      "name": "Fire Nation airship captain",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/1/10/Airship_captain.png/revision/latest?cb=20130121145050"
+    },
+    {
+      "name": "Kuruk",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/d/d1/Kuruk.png/revision/latest?cb=20081225191014"
+    },
+    {
+      "name": "Poi and Ping",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/e/eb/Poi_and_Ping.png/revision/latest?cb=20130814102305"
+    },
+    {
+      "name": "Ba Sing Se airship captain",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/1/11/Ba_Sing_Se_airship_captain.png/revision/latest?cb=20140808221400"
+    },
+    {
+      "name": "Gun",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/3/32/Gun.png/revision/latest?cb=20140730160152"
+    },
+    {
+      "name": "Joo Dee",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/1/1f/Joo_Dee.png/revision/latest?cb=20140422090643"
+    },
+    {
+      "name": "The Duke",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/c/cd/The_Duke.png/revision/latest?cb=20130706011726"
+    },
+    {
+      "name": "Pema",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/1/1d/Pema.png/revision/latest?cb=20150406224956"
+    },
+    {
+      "name": "Hong Li",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/a/a9/Hong_Li.png/revision/latest?cb=20140726172933"
+    },
+    {
+      "name": "Fire Nation councilwoman",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/f/f9/Fire_Nation_councilwoman.png/revision/latest?cb=20121110144847"
+    },
+    {
+      "name": "Ghazan",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/3/39/Ghazan.png/revision/latest?cb=20140822132315"
+    },
+    {
+      "name": "Chey",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/8/8d/Chey.png/revision/latest?cb=20140116103519"
+    },
+    {
+      "name": "Gansu",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/b/b9/Gansu.png/revision/latest?cb=20140331143004"
+    },
+    {
+      "name": "Katara (games)",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/3/34/Katara_games.png/revision/latest?cb=20140615101117"
+    },
+    {
+      "name": "Mura",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/2/24/Mura.png/revision/latest?cb=20130517091301"
+    },
+    {
+      "name": "Wei",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/3/30/Wei.png/revision/latest?cb=20150705160050"
+    },
+    {
+      "name": "Warden (prison rig)",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/a/a5/Warden.png/revision/latest?cb=20140108104427"
+    },
+    {
+      "name": "Appa",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/6/65/Appa_flying.png/revision/latest?cb=20140517110636"
+    },
+    {
+      "name": "Kuzon",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/7/71/Kuzon.png/revision/latest?cb=20130101100859"
+    },
+    {
+      "name": "Baatar",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/d/dd/Baatar.png/revision/latest?cb=20150408115101"
+    },
+    {
+      "name": "Poon",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/e/e5/Warden_Poon.png/revision/latest?cb=20130123150230"
+    },
+    {
+      "name": "Pathik",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/9/91/Guru_Pathik.png/revision/latest?cb=20140510202641"
+    },
+    {
+      "name": "Zuko (games)",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/0/00/Zuko_games.png/revision/latest?cb=20131228014207"
+    },
+    {
+      "name": "Concerned evacuee",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/c/cd/Concerned_evacuee.png/revision/latest?cb=20181103190045"
+    },
+    {
+      "name": "Yi Ming",
+      "img": ""
+    },
+    {
+      "name": "Ba Sing Se University student",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/2/2c/Ba_Sing_Se_student.png/revision/latest?cb=20140422090140"
+    },
+    {
+      "name": "Yangchen's predecessor",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/b/b3/Unnamed_fire_Avatar_close-up.png/revision/latest?cb=20131022002330"
+    },
+    {
+      "name": "How",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/5/54/How.png/revision/latest?cb=20130627093056"
+    },
+    {
+      "name": "Pet shop owner",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/c/cb/Pet_shop_owner.png/revision/latest?cb=20140422090645"
+    },
+    {
+      "name": "Kuvira",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/e/ec/Kuvira.png/revision/latest?cb=20150407233430"
+    },
+    {
+      "name": "Mako",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/a/a6/Mako.png/revision/latest?cb=20150408124557"
+    },
+    {
+      "name": "Broadsword man",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/9/98/Broadsword_man.png/revision/latest?cb=20130630171553"
+    },
+    {
+      "name": "Longshot",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/e/e7/Longshot.png/revision/latest?cb=20140413233811"
+    },
+    {
+      "name": "Pik and Pak",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/3/39/Pik_and_Pak.png/revision/latest?cb=20161127231831"
+    },
+    {
+      "name": "Shiro Shinobi",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/f/f5/Shiro_Shinobi.png/revision/latest?cb=20121206163032"
+    },
+    {
+      "name": "Wolf spirit",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/e/e0/Wolf_spirit_in_the_forest.png/revision/latest?cb=20151230211246"
+    },
+    {
+      "name": "Engineer",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/9/9b/Future_Industries_engineer.png/revision/latest?cb=20130917193918"
+    },
+    {
+      "name": "Ho Tun",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/3/32/Ho_Tun.png/revision/latest?cb=20120203051902"
+    },
+    {
+      "name": "Yue",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/9/9d/Kind_Yue.png/revision/latest?cb=20140122221734"
+    },
+    {
+      "name": "Koh",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/0/00/Koh.png/revision/latest?cb=20140124170917"
+    },
+    {
+      "name": "Fluffykins",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/8/84/Fluffykins.png/revision/latest?cb=20140504180349"
+    },
+    {
+      "name": "Toph Beifong",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/4/46/Toph_Beifong.png/revision/latest?cb=20131230122047"
+    },
+    {
+      "name": "Head of the Dai Li",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/6/69/Head_of_the_Dai_Li.png/revision/latest?cb=20101208144254"
+    },
+    {
+      "name": "Yung",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/7/73/Yung.png/revision/latest?cb=20140722005850"
+    },
+    {
+      "name": "Shung",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/a/a2/Shung.png/revision/latest?cb=20130917183841"
+    },
+    {
+      "name": "Mrs. Morishita",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/e/ee/Morishita%27s_wife.png/revision/latest?cb=20121025105025"
+    },
+    {
+      "name": "Wonyong Keum",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/1/1f/Wonyong_Keum.png/revision/latest?cb=20170827222122"
+    },
+    {
+      "name": "Wacky Wushu",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/c/c3/Wacky_Wushu.png/revision/latest?cb=20130914205154"
+    },
+    {
+      "name": "Song (officer)",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/f/ff/Officer_Song.png/revision/latest?cb=20121110220252"
+    },
+    {
+      "name": "Haru's mother",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/f/fc/Haru%27s_mother.png/revision/latest?cb=20140108095709"
+    },
+    {
+      "name": "Toph Beifong (games)",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/d/d0/Toph_Beifong_%28games%29.png/revision/latest?cb=20140819102901"
+    },
+    {
+      "name": "Wenyan",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/a/ab/Wenyan.png/revision/latest?cb=20170827220617"
+    },
+    {
+      "name": "Karu",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/b/b7/Karu.png/revision/latest?cb=20131020004017"
+    },
+    {
+      "name": "Bum-Ju",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/b/b6/Bum-Ju.png/revision/latest?cb=20140730103156"
+    },
+    {
+      "name": "Ba Sing Se airship co-pilot",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/0/03/Ba_Sing_Se_airship_co-pilot.png/revision/latest?cb=20140808223854"
+    },
+    {
+      "name": "Dealer",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/c/c5/Dealer.png/revision/latest?cb=20130122105706"
+    },
+    {
+      "name": "Lao Beifong",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/a/aa/Lao_Beifong.png/revision/latest?cb=20140317211137"
+    },
+    {
+      "name": "Qin Lee",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/0/04/Qin_Lee.png/revision/latest?cb=20130111102546"
+    },
+    {
+      "name": "Mak",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/c/cf/Mak.png/revision/latest?cb=20150615131526"
+    },
+    {
+      "name": "Jee",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/e/eb/Jee.png/revision/latest?cb=20130714141540"
+    },
+    {
+      "name": "Weapons store shopkeeper",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/2/23/Weapons_store_shopkeeper.png/revision/latest?cb=20140905235446"
+    },
+    {
+      "name": "Sung",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/a/ad/Sung.png/revision/latest?cb=20140517113730"
+    },
+    {
+      "name": "Visola",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/3/33/Visola.png/revision/latest?cb=20150128190038"
+    },
+    {
+      "name": "Fire Nation bar patron",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/d/d4/Fire_Nation_bar_patron.png/revision/latest?cb=20130308170517"
+    },
+    {
+      "name": "Guard post soldier",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/3/35/Guard_post_soldier.png/revision/latest?cb=20141115161831"
+    },
+    {
+      "name": "Moku",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/7/78/Moku.png/revision/latest?cb=20140128105200"
+    },
+    {
+      "name": "Noren",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/4/4c/Ikem.png/revision/latest?cb=20130519220145"
+    },
+    {
+      "name": "Azula",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/1/12/Azula.png/revision/latest?cb=20140905084941"
+    },
+    {
+      "name": "Prison rig captain",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/3/31/Prison_rig_captain.png/revision/latest?cb=20160201201746"
+    },
+    {
+      "name": "Ryu's mother",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/a/a9/Ryu%27s_mother.png/revision/latest?cb=20141128145135"
+    },
+    {
+      "name": "Pasang",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/e/e5/Pasang.png/revision/latest?cb=20130714161406"
+    },
+    {
+      "name": "Kuon",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/e/e3/Kuon.png/revision/latest?cb=20140714232416"
+    },
+    {
+      "name": "Old Iron",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/8/8a/General_Old_Iron.png/revision/latest?cb=20141228225156"
+    },
+    {
+      "name": "Corncob guy",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/c/ce/Corncob_guy.png/revision/latest?cb=20140422090141"
+    },
+    {
+      "name": "Opal",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/3/3c/Opal.png/revision/latest?cb=20150118085854"
+    },
+    {
+      "name": "Miyuki",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/5/53/Miyuki.png/revision/latest?cb=20140113135324"
+    },
+    {
+      "name": "Suyin Beifong",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/2/26/Suyin.png/revision/latest?cb=20140814083841"
+    },
+    {
+      "name": "Yuan",
+      "img": ""
+    },
+    {
+      "name": "Ember Island Players",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/1/16/Ember_Island_Players.png/revision/latest?cb=20130722113209"
+    },
+    {
+      "name": "Innkeeper",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/3/32/Innkeeper.png/revision/latest?cb=20140802073911"
+    },
+    {
+      "name": "Star",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/2/2e/Star.png/revision/latest?cb=20140504183001"
+    },
+    {
+      "name": "Oh",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/d/d7/Oh.png/revision/latest?cb=20140119145456"
+    },
+    {
+      "name": "Malina",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/8/84/Malina.png/revision/latest?cb=20161026183603"
+    },
+    {
+      "name": "Lightning Bolt Zolt",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/6/60/Lightning_Bolt_Zolt.png/revision/latest?cb=20120927011722"
+    },
+    {
+      "name": "Ogodei",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/b/ba/Ogodei.png/revision/latest?cb=20140407160127"
+    },
+    {
+      "name": "Ganbat",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/d/d8/Ganbat.png/revision/latest?cb=20140726231937"
+    },
+    {
+      "name": "Laghima",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/4/48/Laghima.png/revision/latest?cb=20140809130844"
+    },
+    {
+      "name": "Old Fire Nation civilian",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/2/2a/Old_Fire_Nation_civilian.png/revision/latest?cb=20130706005936"
+    },
+    {
+      "name": "Foo Foo Cuddlypoops",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/c/c4/Foo_Foo_Cuddlypoops.png/revision/latest?cb=20130619092711"
+    },
+    {
+      "name": "Lee",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/5/50/Lee.png/revision/latest?cb=20140331143006"
+    },
+    {
+      "name": "Ming (games)",
+      "img": ""
+    },
+    {
+      "name": "Sensu",
+      "img": ""
+    },
+    {
+      "name": "Korra",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/c/ca/Korra.png/revision/latest?cb=20150406235047"
+    },
+    {
+      "name": "Wan",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/5/51/Wan.png/revision/latest?cb=20130720233908"
+    },
+    {
+      "name": "Ty Lee",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/6/6d/Ty_Lee.png/revision/latest?cb=20140905083814"
+    },
+    {
+      "name": "Fire Nation train conductor",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/c/cb/Fire_Nation_train_conductor.png/revision/latest?cb=20130308171223"
+    },
+    {
+      "name": "Hawky",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/2/2f/Hawky.png/revision/latest?cb=20121120044332"
+    },
+    {
+      "name": "Poppy Beifong",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/c/c8/Poppy_Beifong.png/revision/latest?cb=20131231180143"
+    },
+    {
+      "name": "Nini",
+      "img": ""
+    },
+    {
+      "name": "Baraz and Ahnah",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/8/87/Baraz_and_Ahnah.png/revision/latest?cb=20150407110151"
+    },
+    {
+      "name": "Elua",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/9/9a/Elua.png/revision/latest?cb=20130519225713"
+    },
+    {
+      "name": "Dai Li sergeant",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/d/db/Dai_Li_sergeant.png/revision/latest?cb=20140814081916"
+    },
+    {
+      "name": "Tough criminal",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/5/55/Tough_criminal.png/revision/latest?cb=20110614130934"
+    },
+    {
+      "name": "Juicy",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/2/25/Juicy.png/revision/latest?cb=20150406232315"
+    },
+    {
+      "name": "Hei-Won",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/4/4a/Hei-Won.png/revision/latest?cb=20121230162256"
+    },
+    {
+      "name": "San",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/1/11/Mako_and_Bolin%27s_family_picture.png/revision/latest?cb=20160911093853"
+    },
+    {
+      "name": "Skoochy",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/6/6f/Skoochy.png/revision/latest?cb=20121112163611"
+    },
+    {
+      "name": "Penga",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/5/52/Penga.png/revision/latest?cb=20130106085522"
+    },
+    {
+      "name": "Tonraq",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/2/2a/Tonraq.png/revision/latest?cb=20140730104245"
+    },
+    {
+      "name": "Lau Gan-Lan",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/e/ec/Lau_Gan-Lan.png/revision/latest?cb=20121110203342"
+    },
+    {
+      "name": "Jinju",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/0/05/Jinju.png/revision/latest?cb=20130714155040"
+    },
+    {
+      "name": "Oyaji",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/4/42/Oyaji.png/revision/latest?cb=20130819103514"
+    },
+    {
+      "name": "Yahshi",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/4/4b/Yahshi.png/revision/latest?cb=20121024041323"
+    },
+    {
+      "name": "Hasook",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/5/52/Hasook.png/revision/latest?cb=20120325134051"
+    },
+    {
+      "name": "Onku",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/d/de/Onku.png/revision/latest?cb=20120322120145"
+    },
+    {
+      "name": "Morishita",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/0/04/Morishita.png/revision/latest?cb=20130115075424"
+    },
+    {
+      "name": "Southern Water Tribe boy",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/c/cc/Southern_Water_Tribe_boy.png/revision/latest?cb=20140102144716"
+    },
+    {
+      "name": "Chung",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/9/94/Chung.png/revision/latest?cb=20121107115729"
+    },
+    {
+      "name": "Fang",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/c/c3/Fang.png/revision/latest?cb=20121217082142"
+    },
+    {
+      "name": "Tashi",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/3/35/Tashi.png/revision/latest?cb=20130714155745"
+    },
+    {
+      "name": "Shaman",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/5/56/Shaman.png/revision/latest?cb=20140524144942"
+    },
+    {
+      "name": "Noa",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/2/23/Noa.png/revision/latest?cb=20170523214750"
+    },
+    {
+      "name": "Pong",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/f/f8/Pong.png/revision/latest?cb=20140422090646"
+    },
+    {
+      "name": "Fire Nation train engineer",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/c/ca/Train_engineer.png/revision/latest?cb=20130308171418"
+    },
+    {
+      "name": "Doorman",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/b/b7/Doorman.png/revision/latest?cb=20121107121352"
+    },
+    {
+      "name": "Jinora",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/0/01/Jinora.png/revision/latest?cb=20150131225800"
+    },
+    {
+      "name": "Lu Ten",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/d/d6/Lu_Ten.png/revision/latest?cb=20140504182009"
+    },
+    {
+      "name": "Than",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/8/85/Than.png/revision/latest?cb=20140413234452"
+    },
+    {
+      "name": "Yakone's wife",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/2/2f/Yakone%27s_wife.png/revision/latest?cb=20121108092320"
+    },
+    {
+      "name": "Li",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/2/28/Captain_Li.png/revision/latest?cb=20140119105634"
+    },
+    {
+      "name": "Kori Morishita",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/8/85/Kori_Morishita.png/revision/latest?cb=20160330212637"
+    },
+    {
+      "name": "Saikhan",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/1/12/Chief_Saikhan.png/revision/latest?cb=20121128080232"
+    },
+    {
+      "name": "Chan (Fire Nation admiral)",
+      "img": ""
+    },
+    {
+      "name": "Animal control officer",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/5/58/Animal_control_officer.png/revision/latest?cb=20140504160655"
+    },
+    {
+      "name": "Izumi",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/1/10/Izumi.png/revision/latest?cb=20150406235046"
+    },
+    {
+      "name": "Hou-Ting's prisoner",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/7/71/Prisoner.png/revision/latest?cb=20150310231218"
+    },
+    {
+      "name": "High Sage",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/9/9e/High_Sage.png/revision/latest?cb=20130623212716"
+    },
+    {
+      "name": "Tuyen",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/f/f2/Tuyen.png/revision/latest?cb=20150408121312"
+    },
+    {
+      "name": "Smellerbee",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/3/3a/Smellerbee.png/revision/latest?cb=20140413234450"
+    },
+    {
+      "name": "Bully guard",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/0/02/Bully_guard.png/revision/latest?cb=20120702232626"
+    },
+    {
+      "name": "Sho",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/0/0e/Sho.png/revision/latest?cb=20130308165838"
+    },
+    {
+      "name": "Yung (captain)",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/6/62/Captain_Yung.png/revision/latest?cb=20130706142814"
+    },
+    {
+      "name": "Pao",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/4/45/Pao.png/revision/latest?cb=20140422090645"
+    },
+    {
+      "name": "Koko",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/f/f0/Koko.png/revision/latest?cb=20130819093502"
+    },
+    {
+      "name": "Kong",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/2/26/Kong.png/revision/latest?cb=20140808213006"
+    },
+    {
+      "name": "Sud",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/d/d1/Sud.png/revision/latest?cb=20130110111840"
+    },
+    {
+      "name": "Tokuga",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/e/ef/Tokuga.png/revision/latest?cb=20171008202955"
+    },
+    {
+      "name": "Southern Water Tribe girl",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/2/20/Southern_Water_Tribe_girl.png/revision/latest?cb=20130822155216"
+    },
+    {
+      "name": "Jeong Jeong",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/a/a7/Jeong_Jeong_serious.png/revision/latest?cb=20140116113256"
+    },
+    {
+      "name": "Forest spirit",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/3/33/Forest_spirit.png/revision/latest?cb=20140529055837"
+    },
+    {
+      "name": "Professor",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/b/b1/Professor.png/revision/latest?cb=20130519205816"
+    },
+    {
+      "name": "Xing Ying",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/1/13/Xing_Ying.png/revision/latest?cb=20141225235825"
+    },
+    {
+      "name": "Zei",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/b/b0/Zei.png/revision/latest?cb=20140404204805"
+    },
+    {
+      "name": "Merchant",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/1/19/Merchant.png/revision/latest?cb=20121024052739"
+    },
+    {
+      "name": "Ashuna",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/9/9a/Ashuna.png/revision/latest?cb=20161026183558"
+    },
+    {
+      "name": "Gilak",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/c/cd/Gilak.png/revision/latest?cb=20170524065046"
+    },
+    {
+      "name": "Iknik Blackstone Varrick",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/4/48/Varrick_looking_smug.png/revision/latest?cb=20131116223858"
+    },
+    {
+      "name": "Kaja",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/1/16/Kaja.png/revision/latest?cb=20130627155839"
+    },
+    {
+      "name": "Tong",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/2/20/Tong.png/revision/latest?cb=20140215112603"
+    },
+    {
+      "name": "La",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/3/32/La.png/revision/latest?cb=20140124171520"
+    },
+    {
+      "name": "Senna",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/5/5e/Senna.png/revision/latest?cb=20130916153037"
+    },
+    {
+      "name": "Canyon guide",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/d/db/Canyon_guide.png/revision/latest?cb=20131202201055"
+    },
+    {
+      "name": "Ming",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/a/a5/Ming.png/revision/latest?cb=20130120114914"
+    },
+    {
+      "name": "Organ grinder",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/7/77/Organ_grinder.png/revision/latest?cb=20140504160851"
+    },
+    {
+      "name": "Ginger",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/8/85/Ginger.png/revision/latest?cb=20130914063027"
+    },
+    {
+      "name": "Nutha",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/f/fa/Nutha.png/revision/latest?cb=20141225235851"
+    },
+    {
+      "name": "Pepper",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/5/50/Pepper.png/revision/latest?cb=20150408121311"
+    },
+    {
+      "name": "Knowledge Seekers",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/4/41/Knowledge_Seeker.png/revision/latest?cb=20131110112122"
+    },
+    {
+      "name": "Hahn",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/4/46/Hahn.png/revision/latest?cb=20140122221732"
+    },
+    {
+      "name": "Jargala Omo",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/c/ca/Jargala_Omo.png/revision/latest?cb=20180220215623"
+    },
+    {
+      "name": "Meng",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/4/42/Meng.png/revision/latest?cb=20130814090639"
+    },
+    {
+      "name": "Analay",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/c/c3/Analay.png/revision/latest?cb=20140430182201"
+    },
+    {
+      "name": "Baboon spirit",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/0/07/Baboon_spirit.png/revision/latest?cb=20140124171522"
+    },
+    {
+      "name": "Fire Nation bar patron's friend",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/4/40/Fire_Nation_bar_patron%27s_friend.png/revision/latest?cb=20130308170725"
+    },
+    {
+      "name": "Iio",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/8/86/Iio.png/revision/latest?cb=20130705195256"
+    },
+    {
+      "name": "May-Jim",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/1/12/May-Jim.png/revision/latest?cb=20131110115641"
+    },
+    {
+      "name": "Circus master",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/a/a5/Circus_master.png/revision/latest?cb=20130706153819"
+    },
+    {
+      "name": "Asami Sato",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/b/b6/Asami_Sato.png/revision/latest?cb=20150407110150"
+    },
+    {
+      "name": "Maliq",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/4/42/Maliq.png/revision/latest?cb=20161026183604"
+    },
+    {
+      "name": "Fisherman's wife",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/0/03/Fisherman%27s_wife.png/revision/latest?cb=20130714135417"
+    },
+    {
+      "name": "Ham Ghao",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/9/99/Ham_Ghao.png/revision/latest?cb=20081225190937"
+    },
+    {
+      "name": "Lefty",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/0/03/Lefty.png/revision/latest?cb=20150409193514"
+    },
+    {
+      "name": "Sangok",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/f/fd/Sangok.png/revision/latest?cb=20140122222808"
+    },
+    {
+      "name": "Sneers",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/6/65/Sneers.png/revision/latest?cb=20181006212849"
+    },
+    {
+      "name": "Boma",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/3/30/Boma.png/revision/latest?cb=20141228121346"
+    },
+    {
+      "name": "Ruon-Jian",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/3/37/Ruon-Jian.png/revision/latest?cb=20140908142128"
+    },
+    {
+      "name": "Ming-Ming",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/f/ff/Ming-Ming.png/revision/latest?cb=20120322122251"
+    },
+    {
+      "name": "The Dark One",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/4/4e/The_Dark_One.png/revision/latest?cb=20130528065115"
+    },
+    {
+      "name": "Thod's disciples",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/0/0e/Thod%27s_disciples.png/revision/latest?cb=20170530040136"
+    },
+    {
+      "name": "Won-Yee",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/e/e3/Won-Yee.png/revision/latest?cb=20121221075926"
+    },
+    {
+      "name": "Song",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/7/7e/Song.png/revision/latest?cb=20140128110439"
+    },
+    {
+      "name": "Malu (airbender)",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/8/8a/Cardgame_Malu.png/revision/latest?cb=20121129063153"
+    },
+    {
+      "name": "Jin",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/0/08/Jin.png/revision/latest?cb=20140504182006"
+    },
+    {
+      "name": "Pipsqueak",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/e/ef/Pipsqueak.png/revision/latest?cb=20130706005357"
+    },
+    {
+      "name": "Jang Hui boy",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/0/04/Little_boy.png/revision/latest?cb=20140613143543"
+    },
+    {
+      "name": "Farmer and wife",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/f/f4/Farmer_and_wife.png/revision/latest?cb=20130705201707"
+    },
+    {
+      "name": "Ummi",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/2/24/Ummi.png/revision/latest?cb=20130627163647"
+    },
+    {
+      "name": "Fruithog",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/e/ef/Fruithog.png/revision/latest?cb=20140730120547"
+    },
+    {
+      "name": "Kyoshi",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/0/07/Avatar_Kyoshi.png/revision/latest?cb=20140215111846"
+    },
+    {
+      "name": "Pirate captain",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/4/46/Pirate_captain.png/revision/latest?cb=20140112195500"
+    },
+    {
+      "name": "The Boulder",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/7/70/The_Boulder.png/revision/latest?cb=20140317195145"
+    },
+    {
+      "name": "Kya",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/7/77/Kya_%28waterbender%29.png/revision/latest?cb=20151102093816"
+    },
+    {
+      "name": "Hama",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/4/4d/Sinister_Hama.png/revision/latest?cb=20111215082556"
+    },
+    {
+      "name": "Tax collector",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/6/6b/Tax_collector.png/revision/latest?cb=20140108094902"
+    },
+    {
+      "name": "Chit Sang's girlfriend",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/6/60/Chit_Sang%27s_girlfriend.png/revision/latest?cb=20121120131842"
+    },
+    {
+      "name": "Rohan",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/3/35/Rohan.png/revision/latest?cb=20140421100425"
+    },
+    {
+      "name": "Kai",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/3/37/Teenage_Kai.png/revision/latest?cb=20141012234101"
+    },
+    {
+      "name": "Hiroshi Sato",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/c/cf/Hiroshi_Sato.png/revision/latest?cb=20140521170104"
+    },
+    {
+      "name": "Yangchen",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/d/db/Yangchen.png/revision/latest?cb=20131023040543"
+    },
+    {
+      "name": "Yugoda",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/8/85/Yugoda.png/revision/latest?cb=20140119144821"
+    },
+    {
+      "name": "Lowly guard",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/b/bb/Lowly_guard.png/revision/latest?cb=20130109000020"
+    },
+    {
+      "name": "Jet",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/1/1e/Jet.png/revision/latest?cb=20150324102352"
+    },
+    {
+      "name": "Haru",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/d/da/Haru.png/revision/latest?cb=20110104010244"
+    },
+    {
+      "name": "Kya (nonbender)",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/b/b5/Kya_%28nonbender%29.png/revision/latest?cb=20170523213135"
+    },
+    {
+      "name": "Quon",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/8/8a/Quon.png/revision/latest?cb=20130701091130"
+    },
+    {
+      "name": "Storyteller",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/f/f5/Storyteller.png/revision/latest?cb=20140117221706"
+    },
+    {
+      "name": "Outpost soldiers",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/d/d8/Outpost_soldiers.png/revision/latest?cb=20150306110334"
+    },
+    {
+      "name": "Shu",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/3/33/Oma_and_Shu.png/revision/latest?cb=20140128110438"
+    },
+    {
+      "name": "Circus trainer",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/b/bd/Circus_trainer.png/revision/latest?cb=20130705125545"
+    },
+    {
+      "name": "Wu",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/0/0e/King_Wu.png/revision/latest?cb=20141220142035"
+    },
+    {
+      "name": "Lu and Gang",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/a/aa/Lu_and_Gang.png/revision/latest?cb=20131013160007"
+    },
+    {
+      "name": "Wei and Wing",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/4/47/Wei_and_Wing.png/revision/latest?cb=20140726184315"
+    },
+    {
+      "name": "Bumi's advisor",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/f/f7/Bumi%27s_advisor.png/revision/latest?cb=20121121021000"
+    },
+    {
+      "name": "Kaya (village girl)",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/8/83/Kaya_%28village_girl%29.png/revision/latest?cb=20121024053703"
+    },
+    {
+      "name": "Zhao",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/e/e1/Commander_Zhao.png/revision/latest?cb=20140103180854"
+    },
+    {
+      "name": "Tarrlok",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/d/d1/Tarrlok.png/revision/latest?cb=20140119093431"
+    },
+    {
+      "name": "Tycho",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/5/57/Tycho.png/revision/latest?cb=20140504183007"
+    },
+    {
+      "name": "Viper",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/9/99/Viper.png/revision/latest?cb=20131012142438"
+    },
+    {
+      "name": "Ryu",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/d/d1/Ryu.png/revision/latest?cb=20140730142806"
+    },
+    {
+      "name": "Senlin Village leader",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/d/d0/Senlin_Village_leader.png/revision/latest?cb=20130620132536"
+    },
+    {
+      "name": "Kinto",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/b/b3/Kinto.png/revision/latest?cb=20131008055955"
+    },
+    {
+      "name": "Tagaka",
+      "img": ""
+    },
+    {
+      "name": "Tienhai's husband",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/0/01/Tienhai%27s_husband.png/revision/latest?cb=20141228120847"
+    },
+    {
+      "name": "Jingbo",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/8/87/Jingbo.png/revision/latest?cb=20140413160226"
+    },
+    {
+      "name": "Meelo",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/0/0c/Meelo.png/revision/latest?cb=20150406222924"
+    },
+    {
+      "name": "Unnamed Earth Kingdom boys",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/5/5f/Earth_Kingdom_boys.png/revision/latest?cb=20121231082431"
+    },
+    {
+      "name": "Gow",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/d/d9/Gow.png/revision/latest?cb=20140331143005"
+    },
+    {
+      "name": "White Lotus leader",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/b/b5/White_Lotus_leader.png/revision/latest?cb=20150313221208"
+    },
+    {
+      "name": "Yao",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/c/cb/Yao.png/revision/latest?cb=20131020135311"
+    },
+    {
+      "name": "Defense attorney",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/9/9c/Defense_attorney.png/revision/latest?cb=20121107121334"
+    },
+    {
+      "name": "Roku's waterbending master",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/c/c3/Roku%27s_waterbending_master.png/revision/latest?cb=20120317014023"
+    },
+    {
+      "name": "Lo and Li",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/1/14/Lo_and_Li.png/revision/latest?cb=20130111101305"
+    },
+    {
+      "name": "Dock/Xu/Bushi",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/d/de/Xu.png/revision/latest?cb=20140613143539"
+    },
+    {
+      "name": "Hide",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/9/96/Hide.png/revision/latest?cb=20140602093934"
+    },
+    {
+      "name": "Kiyi",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/9/95/Kiyi.png/revision/latest?cb=20150615122850"
+    },
+    {
+      "name": "Fire Nation music teacher",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/4/45/Music_teacher.png/revision/latest?cb=20140602125803"
+    },
+    {
+      "name": "Yin",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/f/f6/Yin.png/revision/latest?cb=20140730175657"
+    },
+    {
+      "name": "Aiwei",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/0/07/Aiwei_reveals_Korra%27s_lie.png/revision/latest?cb=20140808130551"
+    },
+    {
+      "name": "Aang (games)",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/2/21/Into_The_Inferno_Aang.png/revision/latest?cb=20131009060746"
+    },
+    {
+      "name": "Fung",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/a/aa/Fung.png/revision/latest?cb=20140407160126"
+    },
+    {
+      "name": "Utor",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/1/11/Utor.png/revision/latest?cb=20141228113235"
+    },
+    {
+      "name": "Bathroom attendant",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/a/ae/Bathroom_attendant.png/revision/latest?cb=20150407110151"
+    },
+    {
+      "name": "Mongke",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/f/f9/Colonel_Mongke.png/revision/latest?cb=20140215111854"
+    },
+    {
+      "name": "Sozin's dragon",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/a/a5/Sozin%27s_dragon.png/revision/latest?cb=20121030112116"
+    },
+    {
+      "name": "Lieutenant",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/5/51/Lieutenant.png/revision/latest?cb=20121110203356"
+    },
+    {
+      "name": "Ikki",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/4/49/Ikki.png/revision/latest?cb=20150408121310"
+    },
+    {
+      "name": "Shady Shin",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/6/63/Shady_Shin.png/revision/latest?cb=20120502194718"
+    },
+    {
+      "name": "Ta Min",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/d/df/Ta_Min_concerned.png/revision/latest?cb=20081225190745"
+    },
+    {
+      "name": "Zhang leader",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/e/ef/Zhang_leader.png/revision/latest?cb=20130311211244"
+    },
+    {
+      "name": "Ticket woman",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/c/c0/Ticket_woman.png/revision/latest?cb=20140417221543"
+    },
+    {
+      "name": "Bumi",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/0/06/Bumi.png/revision/latest?cb=20140318090248"
+    },
+    {
+      "name": "Captured agent",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/8/89/Captured_agent.png/revision/latest?cb=20140517110639"
+    },
+    {
+      "name": "Governor of Yi",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/f/f6/Governor_of_Yi.png/revision/latest?cb=20150409193512"
+    },
+    {
+      "name": "Kwan",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/b/b0/Kwan.png/revision/latest?cb=20140602125758"
+    },
+    {
+      "name": "Herbalist",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/d/d5/Herbalist.png/revision/latest?cb=20140113140507"
+    },
+    {
+      "name": "Fire Navy officer",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/8/8a/Fire_Navy_officer.png/revision/latest?cb=20140519094412"
+    },
+    {
+      "name": "Nishi",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/f/f5/Nishi.png/revision/latest?cb=20130705153604"
+    },
+    {
+      "name": "Jojo",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/f/f8/Jojo.png/revision/latest?cb=20150615192414"
+    },
+    {
+      "name": "Hou-Ting",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/6/68/Hou-Ting.png/revision/latest?cb=20150209042730"
+    },
+    {
+      "name": "Ukano",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/e/ee/Ukano.png/revision/latest?cb=20130706145902"
+    },
+    {
+      "name": "Hiroshi",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/c/c2/Hiroshi.png/revision/latest?cb=20121230120251"
+    },
+    {
+      "name": "Momo",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/4/43/Inquisitive_Momo.png/revision/latest?cb=20081225191217"
+    },
+    {
+      "name": "Song's mother",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/8/86/Song%27s_mother.png/revision/latest?cb=20140128110440"
+    },
+    {
+      "name": "Kind spirits",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/9/95/Kind_spirits.png/revision/latest?cb=20131101192156"
+    },
+    {
+      "name": "The Big Bad Hippo",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/d/df/The_Big_Bad_Hippo.png/revision/latest?cb=20140317211139"
+    },
+    {
+      "name": "Kanna",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/4/47/Kanna.png/revision/latest?cb=20130822224809"
+    },
+    {
+      "name": "Old wanderer",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/3/36/Old_wanderer.png/revision/latest?cb=20130620104607"
+    },
+    {
+      "name": "Guo",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/1/19/Guo.png/revision/latest?cb=20140726210017"
+    },
+    {
+      "name": "Wan Shi Tong",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/4/4c/Wan_Shi_Tong.png/revision/latest?cb=20140404204804"
+    },
+    {
+      "name": "Yu",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/e/e2/Yu.png/revision/latest?cb=20140317211616"
+    },
+    {
+      "name": "Jinzuk and Rina",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/5/5e/Jinzuk_and_Rina.png/revision/latest?cb=20130519222826"
+    },
+    {
+      "name": "Raava",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/2/2a/Raava.png/revision/latest?cb=20131026225015"
+    },
+    {
+      "name": "Great Sage",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/1/15/Great_Sage.png/revision/latest?cb=20130622212928"
+    },
+    {
+      "name": "Naga",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/3/35/Naga.png/revision/latest?cb=20150813082312"
+    },
+    {
+      "name": "Than's sister",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/1/16/Than%27s_sister.png/revision/latest?cb=20140413234453"
+    },
+    {
+      "name": "Earthbending academy teenagers",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/1/11/Earthbending_academy_teenagers.png/revision/latest?cb=20140317210008"
+    },
+    {
+      "name": "Flopsie",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/4/4c/Goat_gorilla.png/revision/latest?cb=20130706150318"
+    },
+    {
+      "name": "Sokka (games)",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/2/28/Sokka_%28game%29.png/revision/latest?cb=20120730010411"
+    },
+    {
+      "name": "Toza",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/0/0a/Toza.png/revision/latest?cb=20121112022052"
+    },
+    {
+      "name": "Cam",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/2/23/Cam.png/revision/latest?cb=20150421085704"
+    },
+    {
+      "name": "Malu",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/6/65/Malu.png/revision/latest?cb=20140116094711"
+    },
+    {
+      "name": "Protester",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/8/8e/Republic_City_protester.png/revision/latest?cb=20141029143908"
+    },
+    {
+      "name": "Ying",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/7/76/Ying.png/revision/latest?cb=20140413234455"
+    },
+    {
+      "name": "Chit Sang",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/8/81/Chit_Sang.png/revision/latest?cb=20121021000707"
+    },
+    {
+      "name": "Passport attendant",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/e/e2/Grumpy_passport_attendant.png/revision/latest?cb=20140413233809"
+    },
+    {
+      "name": "Bujing",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/7/76/Bujing.png/revision/latest?cb=20130714152817"
+    },
+    {
+      "name": "Suyin's chef",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/e/e5/Chef.png/revision/latest?cb=20140722002237"
+    },
+    {
+      "name": "Yon Rha",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/9/94/Yon_Rha.png/revision/latest?cb=20081225191900"
+    },
+    {
+      "name": "Ghashiun",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/9/98/Ghashiun.png/revision/latest?cb=20130705103954"
+    },
+    {
+      "name": "Metalbender officer",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/a/a8/Metalbender_officer.png/revision/latest?cb=20121110215136"
+    },
+    {
+      "name": "San (vendor)",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/7/7d/San.png/revision/latest?cb=20140628095803"
+    },
+    {
+      "name": "Calm man",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/b/b6/Calm_man.png/revision/latest?cb=20130814093330"
+    },
+    {
+      "name": "Juno",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/4/4a/Juno.png/revision/latest?cb=20121230120716"
+    },
+    {
+      "name": "Aye-aye spirit",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/7/76/Aye-aye_spirit.png/revision/latest?cb=20131019224533"
+    },
+    {
+      "name": "Riley",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/5/58/Riley.png/revision/latest?cb=20130106085126"
+    },
+    {
+      "name": "Oma",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/1/16/Oma.png/revision/latest?cb=20140128110438"
+    },
+    {
+      "name": "Zuko (pilot)",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/a/af/Zuko_pilot.png/revision/latest?cb=20130126192023"
+    },
+    {
+      "name": "Ding",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/e/ef/Ding.png/revision/latest?cb=20140903132916"
+    },
+    {
+      "name": "Roku",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/f/f6/Roku.png/revision/latest?cb=20120601014953"
+    },
+    {
+      "name": "Fire Nation company leader",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/8/82/Fire_Nation_company_leader.png/revision/latest?cb=20121230121700"
+    },
+    {
+      "name": "Appa's mother",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/b/be/Appa%27s_mother.png/revision/latest?cb=20130705194428"
+    },
+    {
+      "name": "Sozin",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/a/aa/Old_Sozin.png/revision/latest?cb=20110112175420"
+    },
+    {
+      "name": "Toz",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/5/5b/Toz.png/revision/latest?cb=20160101210758"
+    },
+    {
+      "name": "Tu",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/9/98/Tu.png/revision/latest?cb=20140730174617"
+    },
+    {
+      "name": "Aang (pilot)",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/7/79/Pilot_-_Aang.png/revision/latest?cb=20120311133235"
+    },
+    {
+      "name": "Teo",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/7/77/Teo.png/revision/latest?cb=20140118125457"
+    },
+    {
+      "name": "Mula",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/a/a1/Mula_in_the_Spirit_World.png/revision/latest?cb=20131111093014"
+    },
+    {
+      "name": "Rock spirit",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/7/76/Rock_spirit.png/revision/latest?cb=20170825060120"
+    },
+    {
+      "name": "The Gecko",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/4/43/The_Gecko.png/revision/latest?cb=20140317211140"
+    },
+    {
+      "name": "Lian",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/e/e4/Lian.png/revision/latest?cb=20140819111240"
+    },
+    {
+      "name": "Chow",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/5/51/Chow.png/revision/latest?cb=20140730173827"
+    },
+    {
+      "name": "Huntsman",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/7/75/Huntsman.png/revision/latest?cb=20131025131855"
+    },
+    {
+      "name": "Headhunter",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/0/06/Headhunter.png/revision/latest?cb=20140317211136"
+    },
+    {
+      "name": "Piandao",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/e/e1/Piandao.png/revision/latest?cb=20140905225031"
+    },
+    {
+      "name": "Vaatu",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/e/ea/Vaatu.png/revision/latest?cb=20131019132738"
+    },
+    {
+      "name": "Iroh (United Forces general)",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/3/34/Iroh_%28United_Forces_general%29.png/revision/latest?cb=20140421100233"
+    },
+    {
+      "name": "Desna and Eska",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/1/1b/Chiefs_Desna_and_Eska.png/revision/latest?cb=20140730174236"
+    },
+    {
+      "name": "Tho",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/d/d6/Tho.png/revision/latest?cb=20130630225558"
+    },
+    {
+      "name": "Air Acolyte woman",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/c/cd/Air_Acolyte_woman.png/revision/latest?cb=20140421100225"
+    },
+    {
+      "name": "The Gopher",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/d/dd/Gopher.png/revision/latest?cb=20140317211135"
+    },
+    {
+      "name": "Flyer distribution man",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/7/74/Flyer_distribution_man.png/revision/latest?cb=20140317210009"
+    },
+    {
+      "name": "Pakku",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/b/bb/Pakku_looking_smug.png/revision/latest?cb=20140119164142"
+    },
+    {
+      "name": "Butler",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/8/82/Butler.png/revision/latest?cb=20121107115044"
+    },
+    {
+      "name": "Due",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/7/7b/Due.png/revision/latest?cb=20130630225941"
+    },
+    {
+      "name": "Gommu",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/5/5a/Gommu.png/revision/latest?cb=20121110144808"
+    },
+    {
+      "name": "Guard captain",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/e/ea/Guard_captain.png/revision/latest?cb=20140116105725"
+    },
+    {
+      "name": "Old Sweepy",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/3/35/Sweepy.png/revision/latest?cb=20130701092858"
+    },
+    {
+      "name": "Zuko",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/4/4b/Zuko.png/revision/latest?cb=20180630112142"
+    },
+    {
+      "name": "Kemurikage",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/7/70/Kemurikage_trio.png/revision/latest?cb=20161026183602"
+    },
+    {
+      "name": "Ozai",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/4/4a/Ozai.png/revision/latest?cb=20130612170743"
+    },
+    {
+      "name": "Mai",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/4/40/Mai.png/revision/latest?cb=20090406114652"
+    },
+    {
+      "name": "Frog spirit",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/7/72/Frog_spirit.png/revision/latest?cb=20131216140457"
+    },
+    {
+      "name": "Niyok",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/1/1d/Niyok.png/revision/latest?cb=20140603012736"
+    },
+    {
+      "name": "Wu (fortuneteller)",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/c/c9/Aunt_Wu.png/revision/latest?cb=20130626124117"
+    },
+    {
+      "name": "Pabu",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/c/c8/Pabu_about_to_comfort_Korra.png/revision/latest?cb=20121111175824"
+    },
+    {
+      "name": "Suki",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/1/14/Suki.png/revision/latest?cb=20130819094354"
+    },
+    {
+      "name": "Sun Warrior chief",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/2/2e/The_Sun_Warriors.png/revision/latest?cb=20171016193449"
+    },
+    {
+      "name": "Light spirit",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/3/35/Light_spirit.png/revision/latest?cb=20141130002129"
+    },
+    {
+      "name": "Zhu Li Moon",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/1/14/Zhu_Li_Moon.png/revision/latest?cb=20151024102423"
+    },
+    {
+      "name": "P'Li",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/5/52/P%27Li.png/revision/latest?cb=20140825101857"
+    },
+    {
+      "name": "Kam",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/1/1b/Kam.png/revision/latest?cb=20170523214817"
+    },
+    {
+      "name": "Otaku",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/2/23/Otaku.png/revision/latest?cb=20140726180415"
+    },
+    {
+      "name": "Chin",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/6/6f/Chin_the_Great.png/revision/latest?cb=20140215111604"
+    },
+    {
+      "name": "Lily",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/0/0a/Lily.png/revision/latest?cb=20140128105159"
+    },
+    {
+      "name": "Sha-Mo",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/3/37/Sandbender_Tribes.png/revision/latest?cb=20130625081236"
+    },
+    {
+      "name": "Town authority",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/8/81/Town_authority.png/revision/latest?cb=20180616203927"
+    },
+    {
+      "name": "Yeh-Lu",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/f/fe/Yeh-Lu.png/revision/latest?cb=20140407161003"
+    },
+    {
+      "name": "Guri",
+      "img": ""
+    },
+    {
+      "name": "Thod",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/1/1c/Thod.png/revision/latest?cb=20170604165643"
+    },
+    {
+      "name": "Green dragon",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/2/24/Dragon_mom.png/revision/latest?cb=20130308171628"
+    },
+    {
+      "name": "Arik",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/6/6f/Arik.png/revision/latest?cb=20140808184002"
+    },
+    {
+      "name": "Azula's ship captain",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/b/bc/Azula%27s_ship_captain.png/revision/latest?cb=20130625131841"
+    },
+    {
+      "name": "Gyatso",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/a/a4/Monk_Gyatso.png/revision/latest?cb=20140103203807"
+    },
+    {
+      "name": "Huu",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/8/85/Huu.png/revision/latest?cb=20130630224726"
+    },
+    {
+      "name": "Bato",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/e/e3/Bato_smiling.png/revision/latest?cb=20130626122901"
+    },
+    {
+      "name": "Hiryu",
+      "img": ""
+    },
+    {
+      "name": "Mother of Faces",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/3/33/Mother_of_Faces.png/revision/latest?cb=20131109203311"
+    },
+    {
+      "name": "Sokka (pilot)",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/8/8c/Sokka_pilot.png/revision/latest?cb=20130126184918"
+    },
+    {
+      "name": "June",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/e/ea/June.png/revision/latest?cb=20130626132827"
+    },
+    {
+      "name": "Yao (vendor)",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/c/c7/Mr._Yao.png/revision/latest?cb=20140903134858"
+    },
+    {
+      "name": "Lin Yee",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/2/29/Lin_Yee.png/revision/latest?cb=20140116104542"
+    },
+    {
+      "name": "Swami",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/e/e7/Swami.png/revision/latest?cb=20130914201236"
+    },
+    {
+      "name": "Yee-Li",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/a/a9/Yee-Li.png/revision/latest?cb=20140427114006"
+    },
+    {
+      "name": "Amon",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/0/00/Amon_and_his_Equalists.png/revision/latest?cb=20160219113422"
+    },
+    {
+      "name": "Yasuko",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/3/32/Sato_family.png/revision/latest?cb=20140421100427"
+    },
+    {
+      "name": "Sensitive ruffian",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/1/1e/Sensitive_ruffian.png/revision/latest?cb=20140215112603"
+    },
+    {
+      "name": "Azulon",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/1/1e/Azulon.png/revision/latest?cb=20140331143003"
+    },
+    {
+      "name": "Nyla",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/7/71/Shirshu.png/revision/latest?cb=20130626132120"
+    },
+    {
+      "name": "Michi",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/0/0b/Michi.png/revision/latest?cb=20130706134435"
+    },
+    {
+      "name": "Wei Jin",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/2/27/Wei_Jin.png/revision/latest?cb=20131202204031"
+    },
+    {
+      "name": "Hope",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/1/18/Hope.png/revision/latest?cb=20140413233809"
+    },
+    {
+      "name": "Banished servant",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/4/48/Banished_servant.png/revision/latest?cb=20120222022610"
+    },
+    {
+      "name": "Kunyo",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/6/69/Kunyo.png/revision/latest?cb=20150608205801"
+    },
+    {
+      "name": "Sung (constable)",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/8/8f/Constable_Sung.png/revision/latest?cb=20160101212337"
+    },
+    {
+      "name": "Soonjei",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/b/b3/Soonjei.png/revision/latest?cb=20170523214916"
+    },
+    {
+      "name": "Ming-Hua",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/6/6c/Ming-Hua.png/revision/latest?cb=20140822185645"
+    },
+    {
+      "name": "Ran and Shaw",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/6/62/Ran_and_Shaw.png/revision/latest?cb=20140901163755"
+    },
+    {
+      "name": "Ring announcer",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/c/ca/Pro-bending_ring_announcer.png/revision/latest?cb=20121107094420"
+    },
+    {
+      "name": "Druk",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/e/ec/Druk.png/revision/latest?cb=20140730151855"
+    },
+    {
+      "name": "Zaheer",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/e/e1/Zaheer.png/revision/latest?cb=20140825190111"
+    },
+    {
+      "name": "Ohev",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/a/ac/Ohev.png/revision/latest?cb=20101219034535"
+    },
+    {
+      "name": "Tui",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/9/99/Tui.png/revision/latest?cb=20140122221307"
+    },
+    {
+      "name": "Hundun",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/4/49/Hundun.png/revision/latest?cb=20141022113648"
+    },
+    {
+      "name": "Mechanist",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/b/b7/Mechanist.png/revision/latest?cb=20140118124602"
+    },
+    {
+      "name": "Siku and Sura",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/5/50/Siku_and_Sura.png/revision/latest?cb=20170820220519"
+    },
+    {
+      "name": "Dragon eel spirit",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/6/66/Dragon_eel_spirit.png/revision/latest?cb=20150726120548"
+    },
+    {
+      "name": "Fat",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/2/2e/Fat.png/revision/latest?cb=20140905232010"
+    },
+    {
+      "name": "Giya",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/a/a9/Giya.png/revision/latest?cb=20150217202134"
+    },
+    {
+      "name": "Gombo",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/b/b2/Gombo.png/revision/latest?cb=20140629232813"
+    },
+    {
+      "name": "Hakoda",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/4/4e/Hakoda_smiling.png/revision/latest?cb=20140510202641"
+    },
+    {
+      "name": "Azula (games)",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/a/ad/Azula_%28games%29.png/revision/latest?cb=20131228015042"
+    },
+    {
+      "name": "Fong",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/0/08/Fong.png/revision/latest?cb=20130625120143"
+    },
+    {
+      "name": "Lokai",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/8/81/Lokai.png/revision/latest?cb=20130911123754"
+    },
+    {
+      "name": "Kya (pilot)",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/d/de/Kya_pilot.png/revision/latest?cb=20130126192101"
+    },
+    {
+      "name": "Pu-on Tim",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/c/cd/Pu-on_Tim.png/revision/latest?cb=20130913224856"
+    },
+    {
+      "name": "Unalaq",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/7/7c/Unalaq.png/revision/latest?cb=20141019103903"
+    },
+    {
+      "name": "Loban",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/c/c0/Loban.png/revision/latest?cb=20140413192716"
+    },
+    {
+      "name": "Kuei",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/5/5e/Kuei.png/revision/latest?cb=20130627084042"
+    },
+    {
+      "name": "Ming-Ming's grandmother",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/5/50/Ming-Ming%27s_grandmother.png/revision/latest?cb=20131007130448"
+    },
+    {
+      "name": "Bumi (King of Omashu)",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/e/e8/King_Bumi.png/revision/latest?cb=20140106141303"
+    },
+    {
+      "name": "Ursa",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/a/a6/Ursa.png/revision/latest?cb=20140331143655"
+    },
+    {
+      "name": "Gan Jin leader",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/d/d8/Gan_Jin_leader.png/revision/latest?cb=20131202205816"
+    },
+    {
+      "name": "Guan",
+      "img": ""
+    },
+    {
+      "name": "Mung",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/5/57/Mung.png/revision/latest?cb=20140613143543"
+    },
+    {
+      "name": "Daw",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/1/18/Daw.png/revision/latest?cb=20140825105810"
+    },
+    {
+      "name": "Jin Wei",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/9/9c/Jin_Wei.png/revision/latest?cb=20131202203023"
+    },
+    {
+      "name": "Mother Superior",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/e/ed/Mother_Superior.png/revision/latest?cb=20130626130958"
+    },
+    {
+      "name": "Macmu-Ling",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/f/f8/Macmu-Ling.png/revision/latest?cb=20140504182010"
+    },
+    {
+      "name": "Council page",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/b/be/Council_page.png/revision/latest?cb=20140421100228"
+    },
+    {
+      "name": "Yakone",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/0/0c/Yakone_smirking.png/revision/latest?cb=20120611191427"
+    },
+    {
+      "name": "Sokka",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/c/cc/Sokka.png/revision/latest?cb=20140905085428"
+    },
+    {
+      "name": "Tenzin",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/d/d6/Tenzin.png/revision/latest?cb=20131117230615"
+    },
+    {
+      "name": "Prosecution attorney",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/d/d5/Prosecution_attorney.png/revision/latest?cb=20140623164414"
+    },
+    {
+      "name": "Ru and Yaling",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/b/b4/Ru_and_Yaling.png/revision/latest?cb=20190519153914"
+    },
+    {
+      "name": "Yon Rha's mother",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/d/db/Yon_Rha%27s_mother.png/revision/latest?cb=20120704032340"
+    },
+    {
+      "name": "On Ji",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/9/9a/On_Ji.png/revision/latest?cb=20140602125810"
+    },
+    {
+      "name": "Vachir",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/a/ad/Vachir.png/revision/latest?cb=20140407161002"
+    },
+    {
+      "name": "Oogi",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/9/99/Oogi.png/revision/latest?cb=20121111175843"
+    },
+    {
+      "name": "Tienhai",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/1/14/Lady_Tienhai.png/revision/latest?cb=20141225234641"
+    },
+    {
+      "name": "Hotah",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/4/4c/Judge_Hotah.png/revision/latest?cb=20131008135523"
+    },
+    {
+      "name": "Haru (games)",
+      "img": ""
+    },
+    {
+      "name": "Qin",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/d/d4/Qin.png/revision/latest?cb=20140118125456"
+    },
+    {
+      "name": "Macao and Lily",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/8/82/Macao_and_Lily.png/revision/latest?cb=20140801180643"
+    },
+    {
+      "name": "Two Toed Ping",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/f/f7/Two_Toed_Ping.png/revision/latest?cb=20121108093555"
+    },
+    {
+      "name": "Bosco",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/9/9b/Bosco.png/revision/latest?cb=20140517110638"
+    },
+    {
+      "name": "Chong",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/f/f8/Chong.png/revision/latest?cb=20140127210142"
+    },
+    {
+      "name": "Hei Bai",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/b/b2/Calm_Hei_Bai.png/revision/latest?cb=20140124170913"
+    },
+    {
+      "name": "Warden (Boiling Rock)",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/0/0f/Boiling_Rock_warden.png/revision/latest?cb=20130118081320"
+    },
+    {
+      "name": "Fishmonger",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/1/1b/Fishmonger.png/revision/latest?cb=20141106163042"
+    },
+    {
+      "name": "Foaming mouth guy",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/1/12/Foaming_mouth_guy.png/revision/latest?cb=20140215111856"
+    },
+    {
+      "name": "Long Feng",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/8/8d/Long_Feng_scheming.png/revision/latest?cb=20140510202422"
+    },
+    {
+      "name": "Rafa and Misu",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/7/79/Rafa_and_Misu.png/revision/latest?cb=20130811003625"
+    },
+    {
+      "name": "Xin Fu",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/0/02/Xin_Fu.png/revision/latest?cb=20140317211615"
+    },
+    {
+      "name": "Dark spider spirit",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/9/9a/Dark_spider_spirit.png/revision/latest?cb=20141109112441"
+    },
+    {
+      "name": "Slim",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/6/6c/Slim.png/revision/latest?cb=20130630231543"
+    },
+    {
+      "name": "Chan",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/9/9d/Chan.png/revision/latest?cb=20140908141053"
+    },
+    {
+      "name": "Jojan",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/a/af/Jojan.png/revision/latest?cb=20140507064902"
+    },
+    {
+      "name": "Royal messenger",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/8/85/Royal_messenger.png/revision/latest?cb=20140510204457"
+    },
+    {
+      "name": "Poki",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/7/70/Poki.png/revision/latest?cb=20131005111854"
+    },
+    {
+      "name": "Baatar Jr.",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/4/45/Baatar_Jr..png/revision/latest?cb=20150409193510"
+    },
+    {
+      "name": "Fire Nation Man",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/4/46/Fire_Nation_Man.png/revision/latest?cb=20140317210008"
+    },
+    {
+      "name": "Jailer",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/3/3a/Jailer.png/revision/latest?cb=20101117041427"
+    },
+    {
+      "name": "Raiko",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/b/b6/Raiko.png/revision/latest?cb=20131009231726"
+    },
+    {
+      "name": "Kahchi",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/7/77/Kahchi.png/revision/latest?cb=20140407160126"
+    },
+    {
+      "name": "Feng",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/5/56/Feng.png/revision/latest?cb=20130817144728"
+    },
+    {
+      "name": "Guard post officer",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/9/92/Guard_post_officer.png/revision/latest?cb=20150407110154"
+    },
+    {
+      "name": "Headmaster",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/6/68/Headmaster.png/revision/latest?cb=20140602125536"
+    },
+    {
+      "name": "Unnamed Fire Nation boy",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/2/28/Unnamed_Fire_Nation_boy.png/revision/latest?cb=20130705155948"
+    },
+    {
+      "name": "Katara",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/7/7a/Katara_smiles_at_coronation.png/revision/latest?cb=20150104171449"
+    },
+    {
+      "name": "Kelsang",
+      "img": ""
+    },
+    {
+      "name": "Kenji",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/c/c8/Kenji.png/revision/latest?cb=20140504182009"
+    },
+    {
+      "name": "Aang",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/a/ae/Aang_at_Jasmine_Dragon.png/revision/latest?cb=20130612174003"
+    },
+    {
+      "name": "Lin Beifong",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/8/83/Lin_Beifong.png/revision/latest?cb=20120608221629"
+    },
+    {
+      "name": "Arnook",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/0/0c/Chief.png/revision/latest?cb=20140122221730"
+    },
+    {
+      "name": "Tahno",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/1/1e/Tahno.png/revision/latest?cb=20121112164745"
+    },
+    {
+      "name": "Scary prisoner",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/9/97/Scary_prisoner.png/revision/latest?cb=20140215112602"
+    },
+    {
+      "name": "Chit Sang's friend",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/6/6e/Chit_Sang%27s_friend.png/revision/latest?cb=20121120131829"
+    },
+    {
+      "name": "Liling",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/6/61/Liling.png/revision/latest?cb=20190519153858"
+    },
+    {
+      "name": "Huan",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/a/a9/Huan.png/revision/latest?cb=20150407233429"
+    },
+    {
+      "name": "Zhen",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/6/67/Zhen_%28firebender%29.png/revision/latest?cb=20180208185756"
+    },
+    {
+      "name": "Gan Jin tribesman",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/5/53/Gan_Jin_tribesman.png/revision/latest?cb=20130311212707"
+    },
+    {
+      "name": "Satoru",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/7/78/Satoru.png/revision/latest?cb=20140413162156"
+    },
+    {
+      "name": "Warehouse worker",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/2/24/Warehouse_worker.png/revision/latest?cb=20121108093227"
+    },
+    {
+      "name": "Radio operator",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/8/88/Radio_operator.png/revision/latest?cb=20140810160336"
+    },
+    {
+      "name": "Earthbender captain",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/8/80/Earthbender_captain.png/revision/latest?cb=20130620111830"
+    },
+    {
+      "name": "Kei Lo",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/1/13/Kei_Lo_waves.png/revision/latest?cb=20151124204503"
+    },
+    {
+      "name": "Shoji",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/d/d0/School_clothes.png/revision/latest?cb=20140602125811"
+    },
+    {
+      "name": "Air Nomad boy",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/7/79/Air_Nomad_boy.png/revision/latest?cb=20130714154218"
+    },
+    {
+      "name": "Jaya",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/9/96/Jaya.png/revision/latest?cb=20131020130025"
+    },
+    {
+      "name": "Cabbage merchant",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/2/2f/Cabbage_merchant.png/revision/latest?cb=20140112200908"
+    },
+    {
+      "name": "46th Earth King",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/5/51/46th_Earth_King.png/revision/latest?cb=20130627160441"
+    },
+    {
+      "name": "Combustion Man",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/f/fc/Combustion_Man.png/revision/latest?cb=20140908141111"
+    },
+    {
+      "name": "Iroh",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/c/c1/Iroh_smiling.png/revision/latest?cb=20130626131914"
+    },
+    {
+      "name": "Southern Raiders commander",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/f/fa/Southern_Raiders_commander_is_shocked.png/revision/latest?cb=20130117130318"
+    },
+    {
+      "name": "Sela",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/5/5c/Sela.png/revision/latest?cb=20140331143654"
+    },
+    {
+      "name": "Lian and Shen",
+      "img": ""
+    },
+    {
+      "name": "Tyro",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/8/88/Tyro_during_the_invasion.png/revision/latest?cb=20130609164844"
+    },
+    {
+      "name": "Fisherman",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/f/f0/Fisherman.png/revision/latest?cb=20130714140302"
+    },
+    {
+      "name": "Tang Xu",
+      "img": ""
+    },
+    {
+      "name": "Painted Lady",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/8/80/Painted_Lady.png/revision/latest?cb=20140613143544"
+    },
+    {
+      "name": "Buttercup Raiko",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/e/ed/Buttercup_Raiko.png/revision/latest?cb=20150409193510"
+    },
+    {
+      "name": "Shyu",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/c/c9/Shyu.png/revision/latest?cb=20130622211349"
+    },
+    {
+      "name": "Tom-Tom",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/4/4a/Tom-Tom_happy.png/revision/latest?cb=20130706151055"
+    },
+    {
+      "name": "Ming (pro-bender)",
+      "img": "https://vignette.wikia.nocookie.net/avatar/images/8/88/Ming_%28pro-bender%29.png/revision/latest?cb=20121122154913"
+    }
+  ]
+}

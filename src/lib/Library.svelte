@@ -35,12 +35,70 @@
         custom = custom.filter((c) => c.id !== t.id)
     }
 
+    // ---- criar a partir de um template existente, escolhendo tópicos ----
+    let base = $state<ITemplate | null>(null)
+    let forkTitle = $state('')
+    let forkQuery = $state('')
+    let picked = $state(new Set<number>()) // índices em base.topics
+
+    function startFork(t: ITemplate) {
+        base = t
+        forkTitle = `${t.name} (cópia)`
+        forkQuery = ''
+        picked = new Set()
+    }
+    const forkVisible = $derived(
+        (base?.topics ?? []).map((t, i) => ({ t, i })).filter(({ t }) => norm(t.name).includes(norm(forkQuery.trim()))),
+    )
+    function toggle(i: number) {
+        const n = new Set(picked)
+        n.has(i) ? n.delete(i) : n.add(i)
+        picked = n
+    }
+    function pickVisible(on: boolean) {
+        const n = new Set(picked)
+        for (const { i } of forkVisible) on ? n.add(i) : n.delete(i)
+        picked = n
+    }
+    function createFork(ev: SubmitEvent) {
+        ev.preventDefault()
+        if (!base || !picked.size || !forkTitle.trim()) return
+        const topics = base.topics.filter((_, i) => picked.has(i)).map(({ name, img }) => ({ name, img }))
+        onopen({ ...createCustom(forkTitle), topics }) // o autosave do workspace grava os tópicos
+    }
+
     const filtered = $derived(
         all.filter((t) => norm(`${t.name} ${t.description}`).includes(norm(query.trim()))),
     )
 </script>
 
 <main>
+{#if base}
+    <h1>Novo a partir de “{base.name}”</h1>
+    <form class="fork" onsubmit={createFork}>
+        <input bind:value={forkTitle} placeholder="Título da nova biblioteca" maxlength="60" required aria-label="Título da nova biblioteca" />
+        <button type="submit" disabled={!picked.size}>Criar com {picked.size} {picked.size === 1 ? 'tópico' : 'tópicos'}</button>
+        <button type="button" class="ghost" onclick={() => (base = null)}>Cancelar</button>
+    </form>
+    <div class="bar">
+        <input type="search" placeholder="Buscar tópico…" aria-label="Buscar tópico" bind:value={forkQuery} />
+        <button type="button" class="ghost" onclick={() => pickVisible(true)}>Selecionar {forkQuery.trim() ? 'filtrados' : 'todos'}</button>
+        <button type="button" class="ghost" onclick={() => pickVisible(false)}>Limpar</button>
+    </div>
+    <ul class="picker">
+        {#each forkVisible as { t, i } (i)}
+            <li>
+                <button type="button" class:on={picked.has(i)} aria-pressed={picked.has(i)} onclick={() => toggle(i)}>
+                    <img src={t.img} alt="" loading="lazy" />
+                    <span>{t.name}</span>
+                    {#if picked.has(i)}<b class="tick">✓</b>{/if}
+                </button>
+            </li>
+        {:else}
+            <p class="empty">Nenhum tópico encontrado.</p>
+        {/each}
+    </ul>
+{:else}
     <h1>Biblioteca de rankings</h1>
     {#if creating}
         <form class="create" onsubmit={create} onkeydown={(e) => e.key === 'Escape' && cancel()}>
@@ -60,6 +118,7 @@
                     {#if t.custom}
                         <button type="button" class="del" onclick={() => remove(t)} aria-label="Excluir biblioteca" title="Excluir biblioteca">×</button>
                     {/if}
+                    <button type="button" class="fork-btn" class:shift={t.custom} onclick={() => startFork(t)} aria-label="Criar novo a partir deste" title="Criar novo a partir deste, escolhendo tópicos">⧉</button>
                     <button onclick={() => onopen(t)}>
                         <span class="thumbs">
                             {#each t.topics.slice(0, 4) as topic (topic.name)}
@@ -75,6 +134,7 @@
     {:else}
         <p class="empty">Nenhum template encontrado.</p>
     {/if}
+{/if}
 </main>
 
 <style>
@@ -117,6 +177,61 @@ li button {
 li button:hover { outline: var(--border-width) solid var(--color-accent); }
 small { opacity: 0.7; }
 li { position: relative; }
+.fork-btn {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    border: 0;
+    background-color: var(--color-surface-dark);
+    color: var(--color-text);
+    cursor: pointer;
+    opacity: 0;
+}
+.fork-btn.shift { right: 32px; }
+li:hover .fork-btn, .fork-btn:focus-visible { opacity: 1; }
+.fork-btn:hover { background-color: var(--color-accent); }
+
+.fork { display: flex; gap: var(--gap); margin-bottom: 16px; }
+.fork input { margin-bottom: 0; flex: 1; }
+.fork button, .bar button {
+    padding: 8px 12px;
+    border: 0;
+    background-color: var(--color-accent);
+    color: var(--color-text);
+    font-size: 14px;
+    cursor: pointer;
+}
+.fork button:disabled { opacity: 0.4; cursor: default; }
+.fork .ghost, .bar .ghost { background-color: var(--color-surface); }
+.bar { display: flex; gap: var(--gap); margin-bottom: 16px; }
+.bar input { margin-bottom: 0; flex: 1; }
+.picker { grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); }
+.picker li button {
+    position: relative;
+    padding: 4px;
+    gap: 4px;
+    border: var(--border-width) solid transparent;
+    text-align: center;
+    font-size: 12px;
+}
+.picker li button.on { border-color: var(--color-accent); background-color: color-mix(in srgb, var(--color-accent) 30%, var(--color-surface)); }
+.picker img { width: 100%; aspect-ratio: 1; object-fit: cover; }
+.picker span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tick {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 20px;
+    height: 20px;
+    display: grid;
+    place-items: center;
+    background-color: var(--color-accent);
+    font-size: 12px;
+}
 .del {
     position: absolute;
     top: 4px;

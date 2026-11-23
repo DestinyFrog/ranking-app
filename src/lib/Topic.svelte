@@ -1,5 +1,5 @@
 <script lang="ts">
-import { board, getPlacement, setPlacement } from "./store.svelte"
+import { board, getPlacement, setPlacement, isPlaceholder, ui } from "./store.svelte"
 
 let { topic, moduleId }: { topic: ITopic; moduleId: number } = $props()
 
@@ -7,6 +7,10 @@ let element: HTMLLIElement
 let dragging = false
 let offset_x = 0
 let offset_y = 0
+let down_x = 0
+let down_y = 0
+
+const armed = $derived(ui.pasteId === topic.id)
 
 // Flutuando: posição vem do estado. Durante o arrasto o estilo é manipulado direto
 // e só ao soltar o estado é atualizado (assim o componente não remonta no meio do gesto).
@@ -19,6 +23,8 @@ function onpointerdown(ev: PointerEvent) {
     const rect = element.getBoundingClientRect()
     offset_x = ev.clientX - rect.left
     offset_y = ev.clientY - rect.top
+    down_x = ev.clientX
+    down_y = ev.clientY
 
     board.z++
     element.style.zIndex = board.z.toString()
@@ -92,7 +98,12 @@ function drop(ev: PointerEvent) {
 
 function onpointerup(ev: PointerEvent) {
     const target = ev.currentTarget as HTMLElement
-    if (dragging && ev.type === 'pointerup') drop(ev)
+    if (dragging && ev.type === 'pointerup') {
+        drop(ev)
+        // clique sem arrastar num tópico sem imagem: fica pronto para receber Ctrl+V
+        const click = Math.hypot(ev.clientX - down_x, ev.clientY - down_y) < 5
+        if (click && isPlaceholder(topic)) ui.pasteId = topic.id ?? null
+    }
     dragging = false
     if (target.hasPointerCapture(ev.pointerId)) target.releasePointerCapture(ev.pointerId)
 }
@@ -101,6 +112,8 @@ function onpointerup(ev: PointerEvent) {
 <!-- svelte-ignore a11y_no_noninteractive_element_to_interactive_role -->
 <li class="topic"
     class:is-sphere={board.display === 'sphere'}
+    class:armed
+    title={armed ? 'Cole uma imagem (Ctrl+V)' : undefined}
     bind:this={element}
     data-id={topic.id}
     {style}
@@ -148,6 +161,12 @@ function onpointerup(ev: PointerEvent) {
         font-size: 13px;
     }
 
+    &.armed {
+        outline: var(--border-width) solid var(--color-text);
+        outline-offset: 2px;
+        animation: armed 1s ease-in-out infinite alternate;
+    }
+
     &.is-sphere {
         border: 0;
         border-radius: 50%;
@@ -166,26 +185,30 @@ function onpointerup(ev: PointerEvent) {
         pointer-events: none;
         overflow: hidden;
 
-        /* brilho e sombra dão volume de esfera */
+        /* sombra no canto inferior dá volume de esfera */
         &::after {
             content: '';
             position: absolute;
             inset: 0;
             border-radius: 50%;
-            background: radial-gradient(circle at 32% 28%, rgb(255 255 255 / 0.45), transparent 45%),
-                radial-gradient(circle at 70% 75%, transparent 55%, rgb(0 0 0 / 0.45));
+            background: radial-gradient(circle at 70% 75%, transparent 55%, rgb(0 0 0 / 0.45));
         }
     }   
 
     img {
         display: block;
         width: 100%;
-        aspect-ratio: 9 / 6;
+        aspect-ratio: 3 / 4;
         object-fit: cover;
+        object-position: center top; /* rostos ficam na parte de cima */
         user-select: none;
         touch-action: none;
         -webkit-user-drag: none;
         pointer-events: none;
     }
+}
+
+@keyframes armed {
+    to { outline-color: var(--color-accent); }
 }
 </style>

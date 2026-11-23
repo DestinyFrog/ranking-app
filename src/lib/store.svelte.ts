@@ -144,8 +144,20 @@ export function releaseRow(moduleId: number, rowId: number) {
     for (const id in m) if (m[id].place?.row === rowId) m[id] = {}
 }
 
+const PLACEHOLDER = 'data:image/svg+xml;utf8,'
+/** Tópico ainda sem imagem de verdade (usa o placeholder com a inicial). */
+export const isPlaceholder = (t: ITopic) => t.img.startsWith(PLACEHOLDER)
+
+/** Tópico selecionado para receber uma imagem colada (Ctrl+V). */
+export const ui = $state<{ pasteId: number | null }>({ pasteId: null })
+
+export function setTopicImage(id: number, img: string) {
+    const t = board.topics.find((x) => x.id === id)
+    if (t) t.img = img
+}
+
 const placeholder = (name: string) =>
-    'data:image/svg+xml;utf8,' +
+    PLACEHOLDER +
     encodeURIComponent(
         `<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><rect width="200" height="200" fill="#92517d"/><text x="100" y="100" font-size="100" font-family="sans-serif" fill="whitesmoke" text-anchor="middle" dominant-baseline="central">${
             (name.trim()[0] ?? '?').toUpperCase().replace(/[<>&]/g, '?')
