@@ -4,8 +4,6 @@
     interface Text { id: number; kind: 'text'; x: number; y: number; text: string; size: number; color: string }
     type Shape = Line | Circle | Text
 
-    // Formas selecionadas ficam acima dos tópicos (que usam z-index crescente a partir de 1)
-    const Z_SELECTED = 1_000_000
     const HANDLE = 8
 
     let { active = true }: { active?: boolean } = $props()
@@ -123,7 +121,8 @@
 <div class="free" bind:this={board} onpointerdown={() => (selectedId = null)}>
     {#each shapes as s (s.id)}
         {@const sel = s.id === selectedId}
-        <svg class="layer" style:z-index={sel ? Z_SELECTED : 0}>
+        <!-- z-index 0: formas ficam sempre atrás dos tópicos (z-index ≥ 1), mesmo selecionadas -->
+        <svg class="layer">
             {#if s.kind === 'line'}
                 <line x1={s.x1} y1={s.y1} x2={s.x2} y2={s.y2} stroke={s.color} stroke-width="4" stroke-linecap="round" />
                 <!-- área de clique mais larga que o traço -->
@@ -209,6 +208,7 @@
 .layer {
     position: absolute;
     inset: 0;
+    z-index: 0;
     width: 100%;
     height: 100%;
     pointer-events: none; /* só a forma em si captura cliques */

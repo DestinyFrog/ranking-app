@@ -1,4 +1,7 @@
 <script lang="ts">
+    import { frame } from './store.svelte'
+
+    const { moduleId }: { moduleId: number } = $props()
     let top = $state('Característica A')
     let bottom = $state('Característica B')
     let left = $state('Característica C')
@@ -8,7 +11,7 @@
 <div class="quadrant">
     <input class="side top" bind:value={top} aria-label="Lado superior" />
     <input class="side left" bind:value={left} aria-label="Lado esquerdo" />
-    <div class="plane">
+    <div class="plane" data-plane={moduleId} use:frame>
         <div class="axis h"></div>
         <div class="axis v"></div>
     </div>

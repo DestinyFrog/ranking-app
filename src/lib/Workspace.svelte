@@ -4,16 +4,19 @@
     import TierModule from "./TierModule.svelte"
     import QuadrantModule from "./QuadrantModule.svelte"
     import FreeModule from "./FreeModule.svelte"
-    import { saveKey, saveNow } from "./persist"
-    import { board, addModule, removeModule, snapshot, restore } from "./store.svelte"
+    import { saveRaw, saveNow } from "./persist"
+    import { board, frame, addModule, removeModule, snapshot, restore } from "./store.svelte"
 
     interface Props {
         /** id do template de origem (chave do salvamento local) */
         templateId: string
         title: string
+        /** clone recém-aberto de um template: só é gravado depois da primeira alteração */
+        fresh?: boolean
         onback: () => void
     }
-    const { templateId, title, onback }: Props = $props()
+    const { templateId, title, fresh = false, onback }: Props = $props()
+    let dirty = !fresh
 
     const defaultNames: Record<ModuleType, string> = {
         tier: 'Tier',
@@ -27,15 +30,16 @@
     let saveTimer: ReturnType<typeof setTimeout>
     $effect(() => {
         const data = JSON.stringify(snapshot(templateId, title))
+        if (!dirty) { dirty = true; return } // primeira execução = estado inicial do clone
         clearTimeout(saveTimer)
         saveTimer = setTimeout(() => {
-            try { localStorage.setItem(saveKey(templateId), data) } catch { /* cota cheia / bloqueado */ }
+            saveRaw(templateId, title, data)
         }, 150)
     })
 
     // fechar/recarregar/trocar de aba logo após soltar: grava na hora
     $effect(() => {
-        const flush = () => { clearTimeout(saveTimer); saveNow(templateId, title) }
+        const flush = () => { clearTimeout(saveTimer); if (dirty) saveNow(templateId, title) }
         const onVis = () => document.visibilityState === 'hidden' && flush()
         window.addEventListener('pagehide', flush)
         document.addEventListener('visibilitychange', onVis)
@@ -84,11 +88,11 @@
                 </label>
                 <button onclick={() => removeModule(m.id)} disabled={board.modules.length === 1} title="Excluir módulo">Excluir módulo</button>
             </header>
-            <div class="body">
+            <div class="body" data-frame={m.id} use:frame>
                 {#if m.type === 'tier'}
                     <TierModule moduleId={m.id} />
                 {:else if m.type === 'quadrant'}
-                    <QuadrantModule />
+                    <QuadrantModule moduleId={m.id} />
                 {:else}
                     <FreeModule active={m.id === board.active} />
                 {/if}

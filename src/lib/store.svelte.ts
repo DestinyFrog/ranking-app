@@ -169,3 +169,19 @@ export function addTopic(name: string, img: string) {
     const id = board.topics.reduce((m, t) => Math.max(m, t.id ?? 0), 0) + 1
     board.topics.push({ id, name: name.trim(), img: img.trim() || placeholder(name) })
 }
+
+// ---- quadro de referência dos tópicos flutuantes ----
+// A posição é guardada como fração do quadro do módulo ([data-plane] se existir, senão [data-frame]).
+/** Muda sempre que um quadro redimensiona, para as posições em px serem recalculadas. */
+export const frames = $state({ n: 0 })
+
+export const frameEl = (moduleId: number) =>
+    document.querySelector<HTMLElement>(`[data-plane="${moduleId}"]`) ??
+    document.querySelector<HTMLElement>(`[data-frame="${moduleId}"]`)
+
+/** Action: avisa quando o quadro muda de tamanho (inclui sair/entrar de hidden). */
+export function frame(node: HTMLElement) {
+    const ro = new ResizeObserver(() => frames.n++)
+    ro.observe(node)
+    return { destroy: () => ro.disconnect() }
+}

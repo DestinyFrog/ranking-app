@@ -1,5 +1,5 @@
 import { snapshot } from './store.svelte'
-import type { ITemplate } from './templates'
+import { templates, type ITemplate } from './templates'
 
 // Salvamento local: um JSON por template, em localStorage.
 export const saveKey = (templateId: string) => `tier:save:${templateId}`
@@ -14,19 +14,52 @@ export function loadSave(templateId: string): ISnapshotLike | null {
 }
 
 /** Grava o estado atual agora (sem debounce). */
-export function saveNow(templateId: string, title: string) {
+export function saveNow(id: string, title: string) {
+    saveRaw(id, title, JSON.stringify(snapshot(id, title)))
+}
+
+/** Grava um snapshot já serializado e garante que o ranking apareça na lista inicial. */
+export function saveRaw(id: string, title: string, data: string) {
     try {
-        localStorage.setItem(saveKey(templateId), JSON.stringify(snapshot(templateId, title)))
+        localStorage.setItem(saveKey(id), data)
+        const idx = readIndex()
+        const i = idx.findIndex((m) => m.id === id)
+        if (i < 0) localStorage.setItem(INDEX_KEY, JSON.stringify([...idx, { id, name: title }]))
+        else if (idx[i].name !== title) {
+            idx[i].name = title
+            localStorage.setItem(INDEX_KEY, JSON.stringify(idx))
+        }
     } catch { /* cota cheia / bloqueado */ }
 }
 
 // import tipo-only evita ciclo com o store
 type ISnapshotLike = import('./store.svelte').ISnapshot
 
-// ---- bibliotecas criadas pelo usuário ----
-// Índice (id + título) em tier:libraries; os tópicos ficam no salvamento de cada uma.
-const INDEX_KEY = 'tier:libraries'
+// ---- rankings do usuário ----
+// Um ranking é uma cópia de um template (ou criado do zero): tem os próprios tópicos, módulos e
+// disposições, e nada propaga de volta ao template de origem. Aparecem na lista inicial junto
+// com os templates nativos. Índice (id + título) em tier:items; o conteúdo fica em tier:save:<id>.
+const INDEX_KEY = 'tier:items'
 type Meta = { id: string; name: string }
+
+/** Formato antigo: bibliotecas em tier:libraries e um salvamento por template nativo. */
+function migrate() {
+    try {
+        if (localStorage.getItem(INDEX_KEY) !== null) return
+        const items: Meta[] = JSON.parse(localStorage.getItem('tier:libraries') ?? '[]')
+        for (const t of templates) {
+            const raw = localStorage.getItem(saveKey(t.id))
+            if (!raw) continue
+            const id = `r-${t.id}`
+            localStorage.setItem(saveKey(id), raw)
+            localStorage.removeItem(saveKey(t.id))
+            items.push({ id, name: t.name })
+        }
+        localStorage.setItem(INDEX_KEY, JSON.stringify(items))
+        localStorage.removeItem('tier:libraries')
+    } catch { /* ignora */ }
+}
+migrate()
 
 function readIndex(): Meta[] {
     try {
@@ -37,23 +70,25 @@ function readIndex(): Meta[] {
     }
 }
 
-/** Bibliotecas do usuário, com os tópicos vindos do salvamento. */
+/** Rankings do usuário, com os tópicos vindos do salvamento. */
 export function listCustom(): ITemplate[] {
     return readIndex().map((m) => ({
         id: m.id,
         name: m.name,
-        description: 'Biblioteca sua',
+        description: 'Seu ranking',
         topics: loadSave(m.id)?.topics ?? [],
         custom: true,
     }))
 }
 
+export const newId = () => `r-${Date.now().toString(36)}${Math.random().toString(36).slice(2, 5)}`
+
 export function createCustom(name: string): ITemplate {
-    const meta: Meta = { id: `custom-${Date.now().toString(36)}`, name: name.trim() }
+    const meta: Meta = { id: newId(), name: name.trim() }
     try {
         localStorage.setItem(INDEX_KEY, JSON.stringify([...readIndex(), meta]))
     } catch { /* bloqueado: a biblioteca existe só nesta sessão */ }
-    return { id: meta.id, name: meta.name, description: 'Biblioteca sua', topics: [], custom: true }
+    return { id: meta.id, name: meta.name, description: 'Seu ranking', topics: [], custom: true }
 }
 
 export function deleteCustom(id: string) {

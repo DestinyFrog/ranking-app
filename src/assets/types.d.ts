@@ -18,8 +18,12 @@ interface IModule {
 
 /** Onde um tópico está dentro de UM módulo (cada módulo tem a sua disposição). */
 interface IPlacement {
-  /** flutuando sobre a tela (coordenadas da viewport) */
-  pos?: { x: number; y: number; z: number };
+  /**
+   * flutuando sobre o módulo. fx/fy são frações (0..1) do quadro do módulo (o plano do quadrante,
+   * ou a área do módulo), então acompanham qualquer tamanho de tela. x/y (px da viewport) é o
+   * formato antigo, ainda lido de salvamentos antigos.
+   */
+  pos?: { z: number; fx?: number; fy?: number; x?: number; y?: number };
   /** dentro de uma linha de tier; rank define a ordem na linha */
   place?: { row: number; rank: number };
 }

@@ -1,5 +1,5 @@
 <script lang="ts">
-import { board, getPlacement, setPlacement, isPlaceholder, ui } from "./store.svelte"
+import { board, getPlacement, setPlacement, isPlaceholder, ui, frames, frameEl } from "./store.svelte"
 
 let { topic, moduleId }: { topic: ITopic; moduleId: number } = $props()
 
@@ -15,7 +15,23 @@ const armed = $derived(ui.pasteId === topic.id)
 // Flutuando: posição vem do estado. Durante o arrasto o estilo é manipulado direto
 // e só ao soltar o estado é atualizado (assim o componente não remonta no meio do gesto).
 const pos = $derived(getPlacement(moduleId, topic.id)?.pos)
-const style = $derived(pos ? `position:fixed;left:${pos.x}px;top:${pos.y}px;z-index:${pos.z}` : '')
+const style = $derived.by(() => {
+    if (!pos) return ''
+    let x = pos.x ?? 0
+    let y = pos.y ?? 0
+    if (pos.fx !== undefined && pos.fy !== undefined) {
+        frames.n // recalcula quando o quadro muda de tamanho
+        const r = frameEl(moduleId)?.getBoundingClientRect()
+        if (r) {
+            x = r.left + pos.fx * r.width
+            y = r.top + pos.fy * r.height
+        }
+    }
+    // nunca fica fora da tela depois de encolher a janela
+    x = Math.min(Math.max(0, x), Math.max(0, window.innerWidth - (element?.offsetWidth ?? 0)))
+    y = Math.min(Math.max(0, y), Math.max(0, window.innerHeight - (element?.offsetHeight ?? 0)))
+    return `position:fixed;left:${x}px;top:${y}px;z-index:${pos.z}`
+})
 
 // Pointer Events cobrem mouse, toque e caneta (o drag HTML5 não funciona em celular)
 function onpointerdown(ev: PointerEvent) {
@@ -90,8 +106,13 @@ function drop(ev: PointerEvent) {
         clearInline()
         setPlacement(moduleId, topic.id!, {})
     } else {
+        const x = parseFloat(element.style.left)
+        const y = parseFloat(element.style.top)
+        const fr = frameEl(moduleId)?.getBoundingClientRect()
         setPlacement(moduleId, topic.id!, {
-            pos: { x: parseFloat(element.style.left), y: parseFloat(element.style.top), z: board.z },
+            pos: fr?.width && fr.height
+                ? { fx: (x - fr.left) / fr.width, fy: (y - fr.top) / fr.height, z: board.z }
+                : { x, y, z: board.z },
         })
     }
 }

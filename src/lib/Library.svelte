@@ -30,7 +30,7 @@
         onopen(createCustom(title)) // abre a tela de módulos já com a biblioteca vazia
     }
     function remove(t: ITemplate) {
-        if (!confirm(`Excluir a biblioteca "${t.name}" e seus tópicos?`)) return
+        if (!confirm(`Excluir o ranking "${t.name}" e seus tópicos?`)) return
         deleteCustom(t.id)
         custom = custom.filter((c) => c.id !== t.id)
     }
@@ -116,7 +116,7 @@
             {#each filtered as t (t.id)}
                 <li>
                     {#if t.custom}
-                        <button type="button" class="del" onclick={() => remove(t)} aria-label="Excluir biblioteca" title="Excluir biblioteca">×</button>
+                        <button type="button" class="del" onclick={() => remove(t)} aria-label="Excluir ranking" title="Excluir ranking">×</button>
                     {/if}
                     <button type="button" class="fork-btn" class:shift={t.custom} onclick={() => startFork(t)} aria-label="Criar novo a partir deste" title="Criar novo a partir deste, escolhendo tópicos">⧉</button>
                     <button onclick={() => onopen(t)}>
