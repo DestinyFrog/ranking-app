@@ -1,17 +1,14 @@
 <script lang="ts">
-    interface Line { id: number; kind: 'line'; x1: number; y1: number; x2: number; y2: number; color: string }
-    interface Circle { id: number; kind: 'circle'; cx: number; cy: number; r: number; color: string }
-    interface Text { id: number; kind: 'text'; x: number; y: number; text: string; size: number; color: string }
-    type Shape = Line | Circle | Text
+    import { getShapes, addShape, removeShape, type Shape, type Line, type Circle, type Text } from './store.svelte'
 
     const HANDLE = 8
 
-    let { active = true }: { active?: boolean } = $props()
+    let { active = true, moduleId }: { active?: boolean; moduleId: number } = $props()
 
     let board: HTMLDivElement
     let textInput: HTMLInputElement | undefined = $state()
-    let nextId = 1
-    let shapes: Shape[] = $state([])
+    const shapes = $derived(getShapes(moduleId))
+    let nextId = $derived(shapes.reduce((m, s) => Math.max(m, s.id), 0) + 1)
     let selectedId: number | null = $state(null)
     let color = $state('#ffffff')
 
@@ -24,8 +21,8 @@
 
     function add(kind: Shape['kind']) {
         const { x, y } = center()
-        const id = nextId++
-        shapes.push(
+        const id = nextId
+        addShape(moduleId,
             kind === 'line'
                 ? { id, kind, x1: x - 80, y1: y, x2: x + 80, y2: y, color }
                 : kind === 'circle'
@@ -37,7 +34,7 @@
     }
 
     function remove() {
-        shapes = shapes.filter((s) => s.id !== selectedId)
+        if (selectedId !== null) removeShape(moduleId, selectedId)
         selectedId = null
     }
 

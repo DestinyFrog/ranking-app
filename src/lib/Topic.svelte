@@ -1,5 +1,5 @@
 <script lang="ts">
-import { board, getPlacement, setPlacement, isPlaceholder, ui, frames, frameEl } from "./store.svelte"
+import { board, getPlacement, setPlacement, isPlaceholder, ui, edit, frames, frameEl } from "./store.svelte"
 
 let { topic, moduleId }: { topic: ITopic; moduleId: number } = $props()
 
@@ -134,13 +134,15 @@ function onpointerup(ev: PointerEvent) {
 <li class="topic"
     class:is-sphere={board.display === 'sphere'}
     class:armed
-    title={armed ? 'Cole uma imagem (Ctrl+V)' : undefined}
+    title={armed ? 'Cole uma imagem ou link (Ctrl+V)' : 'Duplo clique para editar'}
     bind:this={element}
     data-id={topic.id}
     {style}
     {onpointerdown}
     {onpointermove}
     {onpointerup}
+    ondblclick={() => (edit.id = topic.id ?? null)}
+    oncontextmenu={(e) => { e.preventDefault(); edit.id = topic.id ?? null }}
     onpointercancel={onpointerup}
     role="button"
     tabindex="0">
@@ -200,6 +202,7 @@ function onpointerup(ev: PointerEvent) {
         aspect-ratio: 1 / 1;
         border: var(--border-width) solid var(--color-accent);
         border-radius: 50%;
+        background-color: var(--color-topic-bg, #c9c3d6);
         background-size: cover;
         background-position: center;
         box-shadow: 0 4px 10px rgb(0 0 0 / 0.45);
@@ -220,6 +223,7 @@ function onpointerup(ev: PointerEvent) {
         display: block;
         width: 100%;
         aspect-ratio: 3 / 4;
+        background-color: var(--color-topic-bg, #c9c3d6); /* aparece atrás de PNGs transparentes */
         object-fit: cover;
         object-position: center top; /* rostos ficam na parte de cima */
         user-select: none;

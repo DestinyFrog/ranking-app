@@ -40,6 +40,7 @@ export function loadTopics(topics: ITopic[]) {
     board.z = 0
     for (const k in layouts) delete layouts[k]
     for (const k in tierRows) delete tierRows[k]
+    for (const k in shapesByModule) delete shapesByModule[k]
     for (const m of board.modules) if (m.type === 'tier') initRows(m.id)
 }
 
@@ -72,6 +73,28 @@ export interface ISnapshot {
     modules: IModule[]
     rows: Record<number, ITierRow[]>
     layouts: Record<number, Record<number, IPlacement>>
+    shapes?: Record<number, Shape[]>
+}
+
+// formas do módulo livre (linhas, círculos, textos), por módulo
+export interface Line { id: number; kind: 'line'; x1: number; y1: number; x2: number; y2: number; color: string }
+export interface Circle { id: number; kind: 'circle'; cx: number; cy: number; r: number; color: string }
+export interface Text { id: number; kind: 'text'; x: number; y: number; text: string; size: number; color: string }
+export type Shape = Line | Circle | Text
+
+const shapesByModule: Record<number, Shape[]> = $state({})
+
+/** Somente leitura (seguro dentro de $derived). */
+export const getShapes = (moduleId: number): Shape[] => shapesByModule[moduleId] ?? []
+
+export function addShape(moduleId: number, s: Shape) {
+    ;(shapesByModule[moduleId] ??= []).push(s)
+}
+
+export function removeShape(moduleId: number, id: number) {
+    const a = shapesByModule[moduleId]
+    const i = a?.findIndex((s) => s.id === id) ?? -1
+    if (i >= 0) a.splice(i, 1)
 }
 
 export function snapshot(template: string, title: string): ISnapshot {
@@ -87,6 +110,7 @@ export function snapshot(template: string, title: string): ISnapshot {
         modules: board.modules,
         rows: tierRows,
         layouts,
+        shapes: shapesByModule,
     })
 }
 
@@ -103,6 +127,8 @@ export function restore(d: ISnapshot) {
     for (const k in layouts) delete layouts[k]
     Object.assign(tierRows, d.rows ?? {})
     Object.assign(layouts, d.layouts ?? {})
+    for (const k in shapesByModule) delete shapesByModule[k]
+    Object.assign(shapesByModule, d.shapes ?? {})
     // evita colisão de ids novos com os restaurados
     for (const rs of Object.values(tierRows)) for (const r of rs) rowSeq = Math.max(rowSeq, r.id)
 }
@@ -135,6 +161,7 @@ export function setPlacement(moduleId: number, topicId: number, p: IPlacement) {
 export function clearModule(moduleId: number) {
     delete layouts[moduleId]
     delete tierRows[moduleId]
+    delete shapesByModule[moduleId]
 }
 
 /** Tira da linha todos os tópicos dela (voltam para a barra). */
@@ -151,9 +178,51 @@ export const isPlaceholder = (t: ITopic) => t.img.startsWith(PLACEHOLDER)
 /** Tópico selecionado para receber uma imagem colada (Ctrl+V). */
 export const ui = $state<{ pasteId: number | null }>({ pasteId: null })
 
+/** Tópico aberto no editor (duplo clique / botão direito). */
+export const edit = $state<{ id: number | null }>({ id: null })
+
+export function updateTopic(id: number, patch: { name?: string; img?: string }) {
+    const t = board.topics.find((x) => x.id === id)
+    if (!t) return
+    if (patch.name !== undefined && patch.name.trim()) {
+        const wasPlaceholder = isPlaceholder(t)
+        t.name = patch.name.trim()
+        if (wasPlaceholder && patch.img === undefined) t.img = placeholder(t.name)
+    }
+    if (patch.img !== undefined) t.img = patch.img.trim() || placeholder(t.name)
+}
+
+/** Remove o tópico do quadro e de todas as disposições. */
+export function deleteTopic(id: number) {
+    const i = board.topics.findIndex((x) => x.id === id)
+    if (i >= 0) board.topics.splice(i, 1)
+    for (const m in layouts) delete layouts[m][id]
+}
+
 export function setTopicImage(id: number, img: string) {
     const t = board.topics.find((x) => x.id === id)
     if (t) t.img = img
+}
+
+// reduz a imagem colada (print de tela é grande e o salvamento local tem cota)
+async function shrink(file: Blob, max = 400): Promise<string> {
+    const bmp = await createImageBitmap(file)
+    const k = Math.min(1, max / Math.max(bmp.width, bmp.height))
+    const c = document.createElement('canvas')
+    c.width = Math.round(bmp.width * k)
+    c.height = Math.round(bmp.height * k)
+    c.getContext('2d')!.drawImage(bmp, 0, 0, c.width, c.height)
+    return c.toDataURL('image/jpeg', 0.85)
+}
+
+/** Imagem (arquivo) ou link http(s) vindo da área de transferência; null se não houver. */
+export async function imageFromClipboard(ev: ClipboardEvent): Promise<string | null> {
+    const cd = ev.clipboardData
+    if (!cd) return null
+    const file = [...cd.files].find((f) => f.type.startsWith('image/'))
+    if (file) return shrink(file).catch(() => URL.createObjectURL(file))
+    const text = cd.getData('text').trim()
+    return /^https?:\/\/\S+$/.test(text) ? text : null
 }
 
 const placeholder = (name: string) =>

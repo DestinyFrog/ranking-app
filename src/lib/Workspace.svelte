@@ -121,7 +121,7 @@
                     {:else if m.type === 'quadrant'}
                         <QuadrantModule moduleId={m.id} />
                     {:else}
-                        <FreeModule active={m.id === board.active} />
+                        <FreeModule moduleId={m.id} active={m.id === board.active} />
                     {/if}
                 </div>
             </section>
