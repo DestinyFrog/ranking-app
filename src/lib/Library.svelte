@@ -195,7 +195,7 @@ li { position: relative; }
 li:hover .fork-btn, .fork-btn:focus-visible { opacity: 1; }
 .fork-btn:hover { background-color: var(--color-accent); }
 
-.fork { display: flex; gap: var(--gap); margin-bottom: 16px; }
+.fork { display: flex; flex-wrap: wrap; gap: var(--gap); margin-bottom: 16px; }
 .fork input { margin-bottom: 0; flex: 1; }
 .fork button, .bar button {
     padding: 8px 12px;
@@ -207,7 +207,7 @@ li:hover .fork-btn, .fork-btn:focus-visible { opacity: 1; }
 }
 .fork button:disabled { opacity: 0.4; cursor: default; }
 .fork .ghost, .bar .ghost { background-color: var(--color-surface); }
-.bar { display: flex; gap: var(--gap); margin-bottom: 16px; }
+.bar { display: flex; flex-wrap: wrap; gap: var(--gap); margin-bottom: 16px; }
 .bar input { margin-bottom: 0; flex: 1; }
 .picker { grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); }
 .picker li button {
@@ -256,7 +256,7 @@ li:hover .fork-btn, .fork-btn:focus-visible { opacity: 1; }
     cursor: pointer;
 }
 .new { margin-bottom: 16px; }
-.create { display: flex; gap: var(--gap); margin-bottom: 16px; }
+.create { display: flex; flex-wrap: wrap; gap: var(--gap); margin-bottom: 16px; }
 .create input { margin-bottom: 0; flex: 1; }
 .create button[type='button'] { background-color: var(--color-surface); }
 .thumbs { display: flex; gap: 2px; height: 60px; }

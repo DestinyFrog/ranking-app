@@ -92,4 +92,12 @@
     cursor: pointer;
 }
 .menu button:hover { background-color: var(--color-surface-dark); }
+
+/* alvos maiores para dedo no mobile (a gaveta cobre o conteúdo, então o espaço extra é de graça) */
+@media (max-width: 760px) {
+    .rail { width: 48px; gap: 8px; padding: 10px 0; }
+    .item { width: 40px; height: 40px; font-size: 18px; }
+    .menu { left: 52px; }
+    .menu button { padding: 12px 14px; }
+}
 </style>
