@@ -5,7 +5,8 @@
     import QuadrantModule from "./QuadrantModule.svelte"
     import FreeModule from "./FreeModule.svelte"
     import { saveRaw, saveNow } from "./persist"
-    import { board, frame, addModule, removeModule, snapshot, restore } from "./store.svelte"
+    import { board, frame, addModule, removeModule, snapshot, restore, addTopic, updateTopic } from "./store.svelte"
+    import { exportRanking, exportLibrary, parseFile } from "./transfer"
 
     interface Props {
         /** id do template de origem (chave do salvamento local) */
@@ -55,14 +56,8 @@
         }
     })
 
-    function exportJson() {
-        const blob = new Blob([JSON.stringify(snapshot(templateId, title), null, 2)], { type: 'application/json' })
-        const a = document.createElement('a')
-        a.href = URL.createObjectURL(blob)
-        a.download = `${templateId}.tier.json`
-        a.click()
-        URL.revokeObjectURL(a.href)
-    }
+    function exportRank() { exportRanking(title, snapshot(templateId, title)) }
+    function exportLib() { exportLibrary(title, board.topics) }
 
     async function importJson(e: Event) {
         const input = e.currentTarget as HTMLInputElement
@@ -70,7 +65,23 @@
         input.value = ''
         if (!file) return
         try {
-            restore(JSON.parse(await file.text()))
+            const p = parseFile(await file.text())
+            if (p.kind === 'ranking') {
+                if (!confirm('Importar este ranking substitui o ranking atual. Continuar?')) return
+                restore(p.data)
+            } else {
+                // biblioteca: acrescenta só os tópicos que ainda não existem
+                const have = new Set(board.topics.map((t) => `${t.name}|${t.img}`))
+                let n = 0
+                for (const t of p.topics) {
+                    if (have.has(`${t.name}|${t.img}`)) continue
+                    addTopic(t.name, t.img)
+                    const { zoom, ox, oy } = t
+                    updateTopic(board.topics[board.topics.length - 1].id!, { zoom, ox, oy })
+                    n++
+                }
+                alert(`${n} ${n === 1 ? 'tópico adicionado' : 'tópicos adicionados'} (${p.topics.length - n} já existiam).`)
+            }
         } catch (err) {
             alert((err as Error).message)
         }
@@ -109,8 +120,9 @@
                     <button class="back" onclick={onback} title="Voltar para a biblioteca">← Biblioteca</button>
                     <span class="title">{title}</span>
                     <input bind:value={m.name} aria-label="Nome do módulo" maxlength="40" />
-                    <button onclick={exportJson} title="Baixar o ranking como JSON">Exportar</button>
-                    <label class="btn" title="Carregar um ranking salvo em JSON">
+                    <button onclick={exportRank} title="Baixar o ranking completo (tópicos, módulos e posições)">Exportar ranking</button>
+                    <button onclick={exportLib} title="Baixar só a biblioteca de tópicos">Exportar biblioteca</button>
+                    <label class="btn" title="Importar um ranking (substitui o atual) ou uma biblioteca (acrescenta tópicos)">
                         Importar<input type="file" accept="application/json,.json" onchange={importJson} hidden />
                     </label>
                     <button onclick={() => removeModule(m.id)} disabled={board.modules.length === 1} title="Excluir módulo">Excluir módulo</button>

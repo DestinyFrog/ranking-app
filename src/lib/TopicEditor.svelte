@@ -108,7 +108,7 @@
     }
     .card {
         display: flex; flex-direction: column; gap: 10px;
-        width: min(320px, 90vw); padding: 16px;
+        box-sizing: border-box; width: min(320px, 90vw); max-height: 90vh; overflow-y: auto; padding: 16px;
         background: var(--color-surface); color: var(--color-text);
         border: var(--border-width) solid var(--color-accent); border-radius: var(--radius);
     }
@@ -119,7 +119,8 @@
     }
     .preview img { display: block; width: 100%; height: 100%; object-fit: cover; pointer-events: none; user-select: none; }
     .pos { display: flex; gap: 8px; }
-    .pos label { flex: 1; }
+    .pos label { flex: 1; min-width: 0; }
+    input[type='range'] { width: 100%; min-width: 0; box-sizing: border-box; padding: 0; }
     label { display: flex; flex-direction: column; gap: 4px; font-size: 12px; }
     input {
         padding: 6px; background: var(--color-surface-dark); color: var(--color-text);

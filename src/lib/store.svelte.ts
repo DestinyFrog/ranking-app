@@ -250,9 +250,9 @@ const placeholder = (name: string) =>
     )
 
 /** Adiciona um tópico à barra (sem imagem, usa um placeholder com a inicial). */
-export function addTopic(name: string, img: string) {
+export function addTopic(name: string, img: string, frame?: { zoom?: number; ox?: number; oy?: number }) {
     const id = board.topics.reduce((m, t) => Math.max(m, t.id ?? 0), 0) + 1
-    board.topics.push({ id, name: name.trim(), img: img.trim() || placeholder(name) })
+    board.topics.push({ id, name: name.trim(), img: img.trim() || placeholder(name), ...frame })
 }
 
 // ---- quadro de referência dos tópicos flutuantes ----

@@ -1,7 +1,8 @@
 <script lang="ts">
     import { tick } from 'svelte'
     import { templates, type ITemplate } from './templates'
-    import { listCustom, createCustom, deleteCustom } from './persist'
+    import { listCustom, createCustom, deleteCustom, saveRaw } from './persist'
+    import { parseFile } from './transfer'
 
     const { onopen }: { onopen: (t: ITemplate) => void } = $props()
     let query = $state('')
@@ -33,6 +34,25 @@
         if (!confirm(`Excluir o ranking "${t.name}" e seus tópicos?`)) return
         deleteCustom(t.id)
         custom = custom.filter((c) => c.id !== t.id)
+    }
+
+    async function importFile(e: Event) {
+        const input = e.currentTarget as HTMLInputElement
+        const file = input.files?.[0]
+        input.value = ''
+        if (!file) return
+        try {
+            const p = parseFile(await file.text())
+            if (p.kind === 'library') {
+                onopen({ ...createCustom(p.title), topics: p.topics.map(({ name, img, zoom, ox, oy }) => ({ name, img, zoom, ox, oy })) })
+            } else {
+                const t = createCustom(p.data.title || 'Ranking importado')
+                saveRaw(t.id, t.name, JSON.stringify(p.data))
+                onopen({ ...t, topics: p.data.topics })
+            }
+        } catch (err) {
+            alert((err as Error).message)
+        }
     }
 
     // ---- criar a partir de um template existente, escolhendo tópicos ----
@@ -107,7 +127,12 @@
             <button type="button" onclick={cancel}>Cancelar</button>
         </form>
     {:else}
-        <button type="button" class="new" onclick={startCreate}>+ Nova biblioteca</button>
+        <div class="actions">
+            <button type="button" class="new" onclick={startCreate}>+ Nova biblioteca</button>
+            <label class="new import" title="Importar um ranking ou uma biblioteca exportados em JSON">
+                Importar arquivo<input type="file" accept="application/json,.json" onchange={importFile} hidden />
+            </label>
+        </div>
     {/if}
     <input type="search" placeholder="Pesquisar templates…" aria-label="Pesquisar templates" bind:value={query} />
 
@@ -119,7 +144,8 @@
                         <button type="button" class="del" onclick={() => remove(t)} aria-label="Excluir ranking" title="Excluir ranking">×</button>
                     {/if}
                     <button type="button" class="fork-btn" class:shift={t.custom} onclick={() => startFork(t)} aria-label="Criar novo a partir deste" title="Criar novo a partir deste, escolhendo tópicos">⧉</button>
-                    <button onclick={() => onopen(t)}>
+                    <button class="card" class:mine={t.custom} onclick={() => onopen(t)}>
+                        <span class="badge" class:mine={t.custom}>{t.custom ? '● Local' : '◆ Nativo'}</span>
                         <span class="thumbs">
                             {#each t.topics.slice(0, 4) as topic (topic.name)}
                                 <img src={topic.img} alt="" loading="lazy" />
@@ -185,6 +211,10 @@ li { position: relative; }
     width: 24px;
     height: 24px;
     padding: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1;
     border: 0;
     background-color: var(--color-surface-dark);
     color: var(--color-text);
@@ -256,6 +286,22 @@ li:hover .fork-btn, .fork-btn:focus-visible { opacity: 1; }
     cursor: pointer;
 }
 .new { margin-bottom: 16px; }
+.actions { display: flex; flex-wrap: wrap; gap: var(--gap); }
+.import { background-color: var(--color-surface) !important; display: inline-block; }
+.card { border-left: 4px solid var(--color-surface-dark) !important; }
+.card.mine { border-left-color: var(--color-accent) !important; }
+.badge {
+    align-self: flex-start;
+    padding: 2px 8px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    background-color: var(--color-surface-dark);
+    color: var(--color-text);
+    opacity: 0.8;
+}
+.badge.mine { background-color: var(--color-accent); opacity: 1; }
 .create { display: flex; flex-wrap: wrap; gap: var(--gap); margin-bottom: 16px; }
 .create input { margin-bottom: 0; flex: 1; }
 .create button[type='button'] { background-color: var(--color-surface); }

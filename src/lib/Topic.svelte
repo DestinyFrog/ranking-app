@@ -170,7 +170,7 @@ function onpointerup(ev: PointerEvent) {
     class:is-sphere={board.display === 'sphere'}
     class:armed
     class:floating={!!pos}
-    title={armed ? 'Cole uma imagem ou link (Ctrl+V)' : 'Duplo clique para editar'}
+    title={armed ? `${topic.name} — cole uma imagem ou link (Ctrl+V)` : `${topic.name} — duplo clique para editar`}
     bind:this={element}
     data-id={topic.id}
     {style}
