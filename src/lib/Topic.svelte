@@ -34,13 +34,16 @@ const style = $derived.by(() => {
 })
 
 // Pointer Events cobrem mouse, toque e caneta (o drag HTML5 não funciona em celular)
-function onpointerdown(ev: PointerEvent) {
-    if (ev.pointerType === 'mouse' && ev.button !== 0) return
+// Na barra de tópicos, o toque só vira arrasto após segurar (long-press); antes disso
+// o gesto rola a barra normalmente.
+let holdTimer: ReturnType<typeof setTimeout> | undefined
+let pending: PointerEvent | null = null
+const inBar = () => !!element.closest('#left-bar') && element.style.position !== 'fixed'
+
+function startDrag(ev: PointerEvent) {
     const rect = element.getBoundingClientRect()
     offset_x = ev.clientX - rect.left
     offset_y = ev.clientY - rect.top
-    down_x = ev.clientX
-    down_y = ev.clientY
 
     board.z++
     element.style.zIndex = board.z.toString()
@@ -49,10 +52,35 @@ function onpointerdown(ev: PointerEvent) {
     element.style.top = `${rect.top}px`
 
     dragging = true
-    ;(ev.currentTarget as HTMLElement).setPointerCapture(ev.pointerId)
+    try { element.setPointerCapture(ev.pointerId) } catch {}
+    navigator.vibrate?.(15)
 }
 
+function onpointerdown(ev: PointerEvent) {
+    if (ev.pointerType === 'mouse' && ev.button !== 0) return
+    down_x = ev.clientX
+    down_y = ev.clientY
+    if (ev.pointerType === 'touch' && inBar()) {
+        pending = ev
+        clearTimeout(holdTimer)
+        holdTimer = setTimeout(() => { if (pending) startDrag(pending); pending = null }, 300)
+        return
+    }
+    startDrag(ev)
+}
+
+// depois que o arrasto começa, impede o navegador de rolar a barra
+function blockScroll(e: TouchEvent) { if (dragging) e.preventDefault() }
+$effect(() => {
+    element.addEventListener('touchmove', blockScroll, { passive: false })
+    return () => element.removeEventListener('touchmove', blockScroll)
+})
+
 function onpointermove(ev: PointerEvent) {
+    if (pending && Math.hypot(ev.clientX - down_x, ev.clientY - down_y) > 8) {
+        clearTimeout(holdTimer) // moveu antes de segurar: é rolagem
+        pending = null
+    }
     if (!dragging) return
     const maxX = window.innerWidth - element.offsetWidth
     const maxY = window.innerHeight - element.offsetHeight
@@ -119,6 +147,13 @@ function drop(ev: PointerEvent) {
 
 function onpointerup(ev: PointerEvent) {
     const target = ev.currentTarget as HTMLElement
+    clearTimeout(holdTimer)
+    if (pending && ev.type === 'pointerup') {
+        // toque curto sem arrastar: só trata o clique (colar imagem)
+        if (isPlaceholder(topic)) ui.pasteId = topic.id ?? null
+    }
+    pending = null
+    if (dragging && ev.type === 'pointercancel') clearInline()
     if (dragging && ev.type === 'pointerup') {
         drop(ev)
         // clique sem arrastar num tópico sem imagem: fica pronto para receber Ctrl+V
@@ -134,6 +169,7 @@ function onpointerup(ev: PointerEvent) {
 <li class="topic"
     class:is-sphere={board.display === 'sphere'}
     class:armed
+    class:floating={!!pos}
     title={armed ? 'Cole uma imagem ou link (Ctrl+V)' : 'Duplo clique para editar'}
     bind:this={element}
     data-id={topic.id}
@@ -174,7 +210,9 @@ function onpointerup(ev: PointerEvent) {
     border-radius: var(--radius);
     overflow: hidden;
     cursor: pointer;
-    touch-action: none; /* evita o scroll da página ao arrastar com o dedo */
+    touch-action: pan-y; /* permite rolar a barra; o arrasto começa após segurar */
+
+    &.floating { touch-action: none; }
 
     header {
         padding: 4px 0;
