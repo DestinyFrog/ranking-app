@@ -40,11 +40,12 @@
     --padding: calc(var(--gap) * 2);
     box-sizing: border-box;
     flex-shrink: 0;
-    width: calc(var(--cell-size) + var(--padding) * 2);
+    width: calc(var(--cell-size) + var(--padding) * 2 + 4px); /* + barra de rolagem vertical */
     height: 100%;
     padding: var(--padding);
     background-color: var(--color-surface);
     overflow-y: auto;
+    overflow-x: hidden;
     scrollbar-width: thin;
     scrollbar-color: var(--color-accent) transparent;
 }

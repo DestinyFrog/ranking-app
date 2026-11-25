@@ -12,16 +12,20 @@ export interface ITierRow {
     color: string
 }
 
+export const DEFAULT_SIZE = 74 // = --cell-size em app.css
+
 export const board = $state<{
     topics: ITopic[]
     z: number
     active: number
     display: TopicDisplay
+    size: number // largura dos tópicos em px (todos juntos)
     modules: IModule[]
 }>({
     z: 0,
     active: 1, // módulo visível
     display: 'both',
+    size: DEFAULT_SIZE,
     topics: [],
     modules: [],
 })
@@ -67,6 +71,7 @@ export interface ISnapshot {
     title: string
     savedAt: string
     display: TopicDisplay
+    size?: number
     active: number
     z: number
     topics: ITopic[]
@@ -104,6 +109,7 @@ export function snapshot(template: string, title: string): ISnapshot {
         title,
         savedAt: new Date().toISOString(),
         display: board.display,
+        size: board.size,
         active: board.active,
         z: board.z,
         topics: board.topics,
@@ -121,6 +127,7 @@ export function restore(d: ISnapshot) {
     board.topics = d.topics
     board.modules = d.modules
     board.display = d.display ?? 'both'
+    board.size = d.size ?? DEFAULT_SIZE
     board.z = d.z ?? 0
     board.active = d.modules.some((m) => m.id === d.active) ? d.active : d.modules[0].id
     for (const k in tierRows) delete tierRows[k]
@@ -181,7 +188,7 @@ export const ui = $state<{ pasteId: number | null }>({ pasteId: null })
 /** Tópico aberto no editor (duplo clique / botão direito). */
 export const edit = $state<{ id: number | null }>({ id: null })
 
-export function updateTopic(id: number, patch: { name?: string; img?: string }) {
+export function updateTopic(id: number, patch: { name?: string; img?: string; zoom?: number; ox?: number; oy?: number }) {
     const t = board.topics.find((x) => x.id === id)
     if (!t) return
     if (patch.name !== undefined && patch.name.trim()) {
@@ -190,6 +197,15 @@ export function updateTopic(id: number, patch: { name?: string; img?: string }) 
         if (wasPlaceholder && patch.img === undefined) t.img = placeholder(t.name)
     }
     if (patch.img !== undefined) t.img = patch.img.trim() || placeholder(t.name)
+    if (patch.zoom !== undefined) { if (patch.zoom === 1) delete t.zoom; else t.zoom = patch.zoom }
+    if (patch.ox !== undefined) { if (patch.ox === 50) delete t.ox; else t.ox = patch.ox }
+    if (patch.oy !== undefined) { if (patch.oy === 0) delete t.oy; else t.oy = patch.oy }
+}
+
+/** Estilo inline da imagem do tópico (zoom + enquadramento). */
+export const imgStyle = (t: { zoom?: number; ox?: number; oy?: number }) => {
+    const x = t.ox ?? 50, y = t.oy ?? 0
+    return `object-position:${x}% ${y}%;transform-origin:${x}% ${y}%;transform:scale(${t.zoom ?? 1})`
 }
 
 /** Remove o tópico do quadro e de todas as disposições. */

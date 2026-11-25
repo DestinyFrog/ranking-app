@@ -1,5 +1,6 @@
 <script lang="ts">
     import DisplaySelect from "./DisplaySelect.svelte"
+    import SizeRange from "./SizeRange.svelte"
     import Topic from "./Topic.svelte"
     import { board, getPlacement } from "./store.svelte"
 
@@ -11,6 +12,7 @@
 <ul class="ul-topic">
     <li class="option">
         <DisplaySelect />
+        <SizeRange />
     </li>
 
     <li class="option">

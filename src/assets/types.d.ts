@@ -6,6 +6,9 @@ interface ITopic {
   name: string;
   img: string;
   id?: number;
+  zoom?: number; // 1 = sem zoom
+  ox?: number; // enquadramento da imagem, 0–100 (%), padrão 50
+  oy?: number; // padrão 0 (topo, onde ficam os rostos)
 };
 
 type ModuleType = "tier" | "quadrant" | "free";

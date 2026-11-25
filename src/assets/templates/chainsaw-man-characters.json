@@ -1,7 +1,7 @@
 {
   "id": "chainsaw-man-characters",
   "name": "Chainsaw Man — Personagens",
-  "description": "Personagens de Chainsaw Man obtidos via API AniList",
+  "description": "Personagens de Chainsaw Man",
   "topics": [
     {
       "name": "Denji",
@@ -24,11 +24,19 @@
       "img": "https://s4.anilist.co/file/anilistcdn/character/large/b137081-TSrUR3mUJL6r.png"
     },
     {
-      "name": "Tenshi no Akuma",
+      "name": "Himeno",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjNAzLN9Lx1fcPcrG3AaOp4e3Y9I_-7HJx3GKDzRnrqu6nv6BfxaLMcA&s=10"
+    },
+    {
+      "name": "Demônio dos Anjos",
       "img": "https://s4.anilist.co/file/anilistcdn/character/large/b152231-xNV2YsTRzEcS.png"
     },
     {
-      "name": "Bouryoku no Majin",
+      "name": "Prince",
+      "img": "https://kanto.legiaodosherois.com.br/w1200-q95-k1/wp-content/uploads/2022/10/legiao_omGTI9aR2LK8.png.webp"
+    },
+    {
+      "name": "Demônio da Violência",
       "img": "https://s4.anilist.co/file/anilistcdn/character/large/b157231-hV81SwGqxl2R.jpg"
     },
     {
@@ -41,23 +49,91 @@
     },
     {
       "name": "Kishibe",
-      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b144593-hdCTT9t54z0s.png"
+      "img": "https://static.wikia.nocookie.net/chainsaw-man/images/5/50/Kishibe.png/revision/latest/scale-to-width/360?cb=20230116235243&path-prefix=pt-br"
     },
     {
       "name": "Pochita",
       "img": "https://s4.anilist.co/file/anilistcdn/character/large/b170266-bBXPkNJnd3mg.png"
     },
     {
-      "name": "Nyaako",
+      "name": "Miauzinho",
       "img": "https://s4.anilist.co/file/anilistcdn/character/large/b174271-iC0Ul9YfLOk6.png"
     },
     {
-      "name": "Taifuu no Akuma",
+      "name": "Katana Man",
+      "img": "https://i.pinimg.com/736x/55/c8/c2/55c8c27d4280e9b68a5c5d1f4d625cae.jpg"
+    },
+    {
+      "name": "Akane Sawatari",
+      "img": "https://i.pinimg.com/736x/4a/1c/9a/4a1c9afd582f543f75ee9c94cf84a730.jpg"
+    },
+    {
+      "name": "Demônio das Maldições",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe98EDZkKp2ZQsu86M6xw-Bg76KAGhKIVrbHxKV5ixvg&s=10"
+    },
+    {
+      "name": "Demônio dos Tufões",
       "img": "https://s4.anilist.co/file/anilistcdn/character/large/b174276-stAdWlAYg0y1.png"
     },
     {
-      "name": "Kitsune no Akuma",
+      "name": "Demônio das Raposas",
       "img": "https://s4.anilist.co/file/anilistcdn/character/large/b290671-YaauAZvHLnyo.png"
+    },
+    {
+      "name": "Demônio Morcego",
+      "img": "https://kanto.legiaodosherois.com.br/w1200-q95-k1/wp-content/uploads/2022/10/legiao_d2raCFI1ALxz.jpg.webp"
+    },
+    {
+      "name": "Demônio Sanguessuga",
+      "img": "https://kanto.legiaodosherois.com.br/w1200-q95-k1/wp-content/uploads/2022/10/legiao_aeJYd1Ik7zNp.png.webp"
+    },
+    {
+      "name": "Demônio do Futuro",
+      "img": "https://i.pinimg.com/736x/6b/8f/a6/6b8fa6b056abd4533dab5a20cf7468c1.jpg"
+    },
+    {
+      "name": "Demônio dos Zumbis",
+      "img": "https://static.wikia.nocookie.net/chainsaw-man/images/9/98/Zombie_Devil.png/revision/latest?cb=20220806080733"
+    },
+    {
+      "name": "Demônio dos Fantasmas",
+      "img": "https://kanto.legiaodosherois.com.br/w1200-q95-k1/wp-content/uploads/2022/10/Demonio_Fantasma.webp.webp"
+    },
+    {
+      "name": "Demônio da Escuridão",
+      "img": "https://i.redd.it/hml6q8y430qf1.jpg"
+    },
+    {
+      "name": "Demônio da Eternidade",
+      "img": "https://criticalhits.com.br/wp-content/uploads/2021/04/Eternity_Devil.png"
+    },
+    {
+      "name": "Demônio dos Músculos",
+      "img": "https://kanto.legiaodosherois.com.br/w1200-q95-k1/wp-content/uploads/2022/10/Muscle_Devil.webp.webp"
+    },
+    {
+      "name": "Demônio Pistola",
+      "img": "https://kanto.legiaodosherois.com.br/w1200-q95-k1/wp-content/uploads/2022/10/legiao_XTztGnNgxb5h.jpg.webp"
+    },
+    {
+      "name": "Demônio do Inferno",
+      "img": "https://metagalaxia.com.br/wp-content/uploads/2022/11/Demonio-do-Inferno.webp"
+    },
+    {
+      "name": "Demônio dos Pepinos do Mar",
+      "img": "https://kanto.legiaodosherois.com.br/w1200-q95-k1/wp-content/uploads/2022/10/legiao_q_QjyYatc3d0.png.webp"
+    },
+    {
+      "name": "Demônio da Guilhotina (Guiony)",
+      "img": "https://kanto.legiaodosherois.com.br/w1200-q95-k1/wp-content/uploads/2022/10/legiao_q_QjyYatc3d0.png.webp"
+    },
+    {
+      "name": "Quanxi",
+      "img": "https://static.wikia.nocookie.net/chainsaw-man/images/e/e0/Quanxi_contacts_Public_Safety_on_the_mission.png/revision/latest/scale-to-width-down/250?cb=20240902230152"
+    },
+    {
+      "name": "Cosmo",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_xm7eIFGwAizdXDgW37Klnr0rsDTU_RdHEl3PO9i_Kw&s=10"
     },
     {
       "name": "Nomo",
@@ -82,14 +158,6 @@
     {
       "name": "Fuku Taichou",
       "img": "https://s4.anilist.co/file/anilistcdn/character/large/b403939-M5w9YTMa1pUM.jpg"
-    },
-    {
-      "name": "Futamichi no Master",
-      "img": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg"
-    },
-    {
-      "name": "Buta no Akuma",
-      "img": "https://s4.anilist.co/file/anilistcdn/character/large/b174284-JvwoPbQEmKkw.png"
     }
   ]
 }

@@ -1,5 +1,5 @@
 <script lang="ts">
-import { board, getPlacement, setPlacement, isPlaceholder, ui, edit, frames, frameEl } from "./store.svelte"
+import { board, getPlacement, setPlacement, isPlaceholder, ui, edit, frames, frameEl, imgStyle } from "./store.svelte"
 
 let { topic, moduleId }: { topic: ITopic; moduleId: number } = $props()
 
@@ -148,7 +148,9 @@ function onpointerup(ev: PointerEvent) {
     tabindex="0">
 
     {#if board.display === 'sphere'}
-        <div class="sphere" style:background-image="url({topic.img})" role="img" aria-label={topic.name} title={topic.name}></div>
+        <div class="sphere" role="img" aria-label={topic.name} title={topic.name}>
+            <img src={topic.img} alt="" draggable="false" style={imgStyle(topic)} />
+        </div>
     {:else}
         {#if board.display !== 'image'}
             <header>
@@ -157,7 +159,7 @@ function onpointerup(ev: PointerEvent) {
         {/if}
 
         {#if board.display !== 'name'}
-            <img src={ topic.img } alt={ topic.name } draggable="false" />
+            <div class="frame"><img src={ topic.img } alt={ topic.name } draggable="false" style={imgStyle(topic)} /></div>
         {/if}
     {/if}
 </li>
@@ -203,8 +205,6 @@ function onpointerup(ev: PointerEvent) {
         border: var(--border-width) solid var(--color-accent);
         border-radius: 50%;
         background-color: var(--color-topic-bg, #c9c3d6);
-        background-size: cover;
-        background-position: center;
         box-shadow: 0 4px 10px rgb(0 0 0 / 0.45);
         pointer-events: none;
         overflow: hidden;
@@ -219,13 +219,26 @@ function onpointerup(ev: PointerEvent) {
         }
     }   
 
-    img {
-        display: block;
-        width: 100%;
+    .frame {
+        overflow: hidden;
         aspect-ratio: 3 / 4;
         background-color: var(--color-topic-bg, #c9c3d6); /* aparece atrás de PNGs transparentes */
+    }
+
+    .sphere img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
         object-fit: cover;
-        object-position: center top; /* rostos ficam na parte de cima */
+    }
+
+    .frame img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: var(--color-topic-bg, #c9c3d6); /* aparece atrás de PNGs transparentes */
+        object-fit: cover;
         user-select: none;
         touch-action: none;
         -webkit-user-drag: none;
