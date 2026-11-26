@@ -56,7 +56,17 @@ function startDrag(ev: PointerEvent) {
     navigator.vibrate?.(15)
 }
 
+// No toque, editar é duplo toque (segurar é só para arrastar)
+let lastType = 'mouse'
+let lastTap = 0
+function registerTap() {
+    const now = Date.now()
+    if (now - lastTap < 350) { lastTap = 0; edit.id = topic.id ?? null }
+    else lastTap = now
+}
+
 function onpointerdown(ev: PointerEvent) {
+    lastType = ev.pointerType
     if (ev.pointerType === 'mouse' && ev.button !== 0) return
     down_x = ev.clientX
     down_y = ev.clientY
@@ -151,6 +161,7 @@ function onpointerup(ev: PointerEvent) {
     if (pending && ev.type === 'pointerup') {
         // toque curto sem arrastar: só trata o clique (colar imagem)
         if (isPlaceholder(topic)) ui.pasteId = topic.id ?? null
+        registerTap()
     }
     pending = null
     if (dragging && ev.type === 'pointercancel') clearInline()
@@ -159,6 +170,7 @@ function onpointerup(ev: PointerEvent) {
         // clique sem arrastar num tópico sem imagem: fica pronto para receber Ctrl+V
         const click = Math.hypot(ev.clientX - down_x, ev.clientY - down_y) < 5
         if (click && isPlaceholder(topic)) ui.pasteId = topic.id ?? null
+        if (click && ev.pointerType === 'touch') registerTap()
     }
     dragging = false
     if (target.hasPointerCapture(ev.pointerId)) target.releasePointerCapture(ev.pointerId)
@@ -170,15 +182,15 @@ function onpointerup(ev: PointerEvent) {
     class:is-sphere={board.display === 'sphere'}
     class:armed
     class:floating={!!pos}
-    title={armed ? `${topic.name} — cole uma imagem ou link (Ctrl+V)` : `${topic.name} — duplo clique para editar`}
+    title={armed ? `${topic.name} — cole uma imagem ou link (Ctrl+V)` : `${topic.name} — duplo clique/toque para editar`}
     bind:this={element}
     data-id={topic.id}
     {style}
     {onpointerdown}
     {onpointermove}
     {onpointerup}
-    ondblclick={() => (edit.id = topic.id ?? null)}
-    oncontextmenu={(e) => { e.preventDefault(); edit.id = topic.id ?? null }}
+    ondblclick={() => { if (lastType !== 'touch') edit.id = topic.id ?? null }}
+    oncontextmenu={(e) => { e.preventDefault(); if (lastType !== 'touch') edit.id = topic.id ?? null }}
     onpointercancel={onpointerup}
     role="button"
     tabindex="0">
