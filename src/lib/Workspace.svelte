@@ -7,6 +7,7 @@
     import { saveRaw, saveNow } from "./persist"
     import { board, frame, addModule, removeModule, snapshot, restore, addTopic, updateTopic } from "./store.svelte"
     import { exportRanking, exportLibrary, parseFile } from "./transfer"
+    import { exportTierImage } from "./exportImage"
 
     interface Props {
         /** id do template de origem (chave do salvamento local) */
@@ -58,6 +59,15 @@
 
     function exportRank() { exportRanking(title, snapshot(templateId, title)) }
     function exportLib() { exportLibrary(title, board.topics) }
+
+    async function exportImage(m: IModule) {
+        try {
+            const failed = await exportTierImage(m.id, title, m.name)
+            if (failed) alert(`${failed} ${failed === 1 ? 'imagem não pôde' : 'imagens não puderam'} ser incluídas (bloqueadas pelo servidor de origem).`)
+        } catch (err) {
+            alert((err as Error).message)
+        }
+    }
 
     async function importJson(e: Event) {
         const input = e.currentTarget as HTMLInputElement
@@ -120,6 +130,9 @@
                     <button class="back" onclick={onback} title="Voltar para a biblioteca">← Biblioteca</button>
                     <span class="title">{title}</span>
                     <input bind:value={m.name} aria-label="Nome do módulo" maxlength="40" />
+                    {#if m.type === 'tier'}
+                        <button onclick={() => exportImage(m)} title="Baixar um print (PNG) da tierlist">Exportar imagem</button>
+                    {/if}
                     <button onclick={exportRank} title="Baixar o ranking completo (tópicos, módulos e posições)">Exportar ranking</button>
                     <button onclick={exportLib} title="Baixar só a biblioteca de tópicos">Exportar biblioteca</button>
                     <label class="btn" title="Importar um ranking (substitui o atual) ou uma biblioteca (acrescenta tópicos)">
