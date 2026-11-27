@@ -1,7 +1,7 @@
 <script lang="ts">
     import { tick } from 'svelte'
     import { templates, type ITemplate } from './templates'
-    import { listCustom, createCustom, deleteCustom, saveRaw } from './persist'
+    import { listCustom, createCustom, deleteCustom, renameCustom, saveRaw } from './persist'
     import { parseFile } from './transfer'
     import { templateUrl } from './share'
 
@@ -35,6 +35,13 @@
         if (!confirm(`Excluir o ranking "${t.name}" e seus tópicos?`)) return
         deleteCustom(t.id)
         custom = custom.filter((c) => c.id !== t.id)
+    }
+
+    function rename(t: ITemplate) {
+        const name = prompt('Novo nome da biblioteca:', t.name)?.trim().slice(0, 60)
+        if (!name || name === t.name) return
+        renameCustom(t.id, name)
+        custom = custom.map((c) => (c.id === t.id ? { ...c, name } : c))
     }
 
     async function copyLink(t: ITemplate) {
@@ -149,6 +156,9 @@
                     {#if t.custom}
                         <button type="button" class="del" onclick={() => remove(t)} aria-label="Excluir ranking" title="Excluir ranking">×</button>
                     {/if}
+                    {#if t.custom}
+                        <button type="button" class="fork-btn shift2" onclick={() => rename(t)} aria-label="Renomear ranking" title="Renomear">✎</button>
+                    {/if}
                     {#if !t.custom}
                         <button type="button" class="fork-btn shift" onclick={() => copyLink(t)} aria-label="Copiar link do template" title="Copiar link deste template">🔗</button>
                     {/if}
@@ -231,6 +241,7 @@ li { position: relative; }
     opacity: 0;
 }
 .fork-btn.shift { right: 32px; }
+.fork-btn.shift2 { right: 60px; }
 li:hover .fork-btn, .fork-btn:focus-visible { opacity: 1; }
 .fork-btn:hover { background-color: var(--color-accent); }
 

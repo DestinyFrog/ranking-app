@@ -91,6 +91,16 @@ export function createCustom(name: string): ITemplate {
     return { id: meta.id, name: meta.name, description: 'Seu ranking', topics: [], custom: true }
 }
 
+export function renameCustom(id: string, name: string) {
+    name = name.trim()
+    if (!name) return
+    try {
+        localStorage.setItem(INDEX_KEY, JSON.stringify(readIndex().map((m) => (m.id === id ? { ...m, name } : m))))
+        const save = loadSave(id)
+        if (save) localStorage.setItem(saveKey(id), JSON.stringify({ ...save, title: name }))
+    } catch { /* ignora */ }
+}
+
 export function deleteCustom(id: string) {
     try {
         localStorage.setItem(INDEX_KEY, JSON.stringify(readIndex().filter((m) => m.id !== id)))
