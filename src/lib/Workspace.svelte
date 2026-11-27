@@ -18,7 +18,9 @@
         onback: () => void
     }
     const { templateId, title, fresh = false, onback }: Props = $props()
-    let dirty = !fresh
+    // clone recém-aberto de um template: só vira ranking salvo quando o estado difere do inicial
+    let baseline: string | null = null
+    let changed = !fresh
 
     const defaultNames: Record<ModuleType, string> = {
         tier: 'Tier',
@@ -38,7 +40,11 @@
     let saveTimer: ReturnType<typeof setTimeout>
     $effect(() => {
         const data = JSON.stringify(snapshot(templateId, title))
-        if (!dirty) { dirty = true; return } // primeira execução = estado inicial do clone
+        if (fresh && baseline === null) { baseline = data; return } // estado inicial do clone
+        if (!changed) {
+            if (data === baseline) return // nada mudou de fato: não cria cópia
+            changed = true
+        }
         clearTimeout(saveTimer)
         saveTimer = setTimeout(() => {
             saveRaw(templateId, title, data)
@@ -47,7 +53,7 @@
 
     // fechar/recarregar/trocar de aba logo após soltar: grava na hora
     $effect(() => {
-        const flush = () => { clearTimeout(saveTimer); if (dirty) saveNow(templateId, title) }
+        const flush = () => { clearTimeout(saveTimer); if (changed) saveNow(templateId, title) }
         const onVis = () => document.visibilityState === 'hidden' && flush()
         window.addEventListener('pagehide', flush)
         document.addEventListener('visibilitychange', onVis)

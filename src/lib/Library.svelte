@@ -3,6 +3,7 @@
     import { templates, type ITemplate } from './templates'
     import { listCustom, createCustom, deleteCustom, saveRaw } from './persist'
     import { parseFile } from './transfer'
+    import { templateUrl } from './share'
 
     const { onopen }: { onopen: (t: ITemplate) => void } = $props()
     let query = $state('')
@@ -34,6 +35,11 @@
         if (!confirm(`Excluir o ranking "${t.name}" e seus tópicos?`)) return
         deleteCustom(t.id)
         custom = custom.filter((c) => c.id !== t.id)
+    }
+
+    async function copyLink(t: ITemplate) {
+        const url = templateUrl(t.id)
+        try { await navigator.clipboard.writeText(url); alert('Link copiado!') } catch { prompt('Copie o link:', url) }
     }
 
     async function importFile(e: Event) {
@@ -142,6 +148,9 @@
                 <li>
                     {#if t.custom}
                         <button type="button" class="del" onclick={() => remove(t)} aria-label="Excluir ranking" title="Excluir ranking">×</button>
+                    {/if}
+                    {#if !t.custom}
+                        <button type="button" class="fork-btn shift" onclick={() => copyLink(t)} aria-label="Copiar link do template" title="Copiar link deste template">🔗</button>
                     {/if}
                     <button type="button" class="fork-btn" class:shift={t.custom} onclick={() => startFork(t)} aria-label="Criar novo a partir deste" title="Criar novo a partir deste, escolhendo tópicos">⧉</button>
                     <button class="card" class:mine={t.custom} onclick={() => onopen(t)}>
